@@ -1,0 +1,89 @@
+.page-daccueil {
+    background-image: url(../Image/illustration-conceptuelle-de-la-technologie-de-developpement-de-sites-web-mobiles-conception-de-pages-internet-de-mise-en-page-site-sur-ecran-de-telephone-.jpg);
+}
+p, h1 {
+    color: white;
+}
+
+/******************/
+/* Menu déroulant */
+/******************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(255, 50, 50);
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: grey;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.conteneur{
+    margin: 50px 20px;
+    height: 1500px;
+    text-align: center;
+}
