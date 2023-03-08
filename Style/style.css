@@ -24,9 +24,8 @@ header {
 .logo {
     cursor: pointer;
     color: #0088A9;
-}
-.logo::before{
-    animation: logo-animation 6s linear infinite;
+    margin-top: 50px;
+    animation: logo-animation 0.8s ease-out;
 }
 .navbar {
     list-style: none;
