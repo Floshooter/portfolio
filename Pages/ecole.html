@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="fr">
+<head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/9fcc83768f.css" crossorigin="anonymous">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src=""></script>
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Javascript & CSS-->
+    <link rel="stylesheet" href="../Templates/style.css">
+    <script src="../Templates/app.js"></script>
+    <!-- Logo et titre -->
+    <link rel="shortcut icon" href="../Image/briefcase-solid-24.png" />
     <title>Portfolio - Florent Bernier</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo item-1">Florent Bernier</a>
-        <nav>
-            <ul class="navbar item-2">
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="./profil.html">Profil</a></li>
-                <li><a href="./btssio.html">BTS SIO</a></li>
-                <li><a href="./ecole.html">Ecole</a></li>
-                <li><a href="./entreprise.html">Entreprise</a></li>
-                <li><a href="./veilletechno.html">Veille Technologique</a></li>
-            </ul>
-        </nav>
-        <div>
-            <a class="signin" href="#"><button>Sign in</button></a>
-            <a class="signup" href="#"><button>Sign up</button></a>
+    <header>   
+        <a href="../index.html" class="logo"><i class='bx bxs-briefcase'></i><span>Portfolio.</span></a>
+        <ul class="navbar">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="./profil.html">Profil</a></li>
+            <li><a href="./btssio.html">BTS SIO</a></li>
+            <li><a href="./ecole.html" class="active">Ecole</a></li>  
+            <li><a href="./entreprise.html">Entreprise</a></li> 
+            <li><a href="veilletechno.html">Veille Technologique</a></li>
+        </ul>
+    </header>
+    <main class="flex-shrink-0">
+        <div class="container">
+            <div class="bandeau rounded">
+                <h1 class="text-center font-index-h1">Projets Ecole</h1>
+            </div>
+            <div class="paragraphe ecole">
+                <h4 class="font-h4 "style="text-align:center;">Documentation</h4>
+                <div class="liens">
+                    <a class="bouton "  href="../Image/GLPI - Florent Bernier.pdf" target="_blank"><button>GLPI</button></a>
+                    <a  href="../Image/Projet Bibliothèque - Florent Bernier.pdf" class="bouton" target="_blank"><button>Projet Bibliothèqe</button></a> 
+                </div>
+            </div>
+            <div class="paragraphe ecole">
+                <h4 class="font-h4 "style="text-align:center;">Ateliers Professionnels</h4>
+                <div class="liens">
+                    <a class="bouton"  href="../Image/Horizon.zip" target=""><button>AP 1</button></a>
+                    <a class="bouton" href="" target=""><button>AP 2</button></a> 
+                    <a class="bouton" href="" target=""><button>AP3</button></a>
+                    <a class="bouton" href="" target=""><button>AP4</button></a>
+                </div>
+            </div>
         </div>
-    </header> 
-    <main>
-        
     </main>
 </body>
 </html>

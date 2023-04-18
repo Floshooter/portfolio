@@ -1,34 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="fr">
+<head>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/9fcc83768f.css" crossorigin="anonymous">
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src=""></script>
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Javascript & CSS-->
+    <link rel="stylesheet" href="./Templates/style.css">
+    <script src="./Templates/app.js"></script>
+    <!-- Logo et titre -->
+    <link rel="shortcut icon" href="./Image/briefcase-solid-24.png" />
     <title>Portfolio - Florent Bernier</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo item-1">Florent Bernier</a>
-        <nav>
-            <ul class="navbar item-2">
-                <li><a href="./index.html">Accueil</a></li>
-                <li><a href="./Pages/profil.html">Profil</a></li>
-                <li><a href="./Pages/btssio.html">BTS SIO</a></li>
-                <li><a href="./Pages/ecole.html">Ecole</a></li>
-                <li><a href="./Pages/entreprise.html">Entreprise</a></li>
-                <li><a href="./Pages/veilletechno.html">Veille Technologique</a></li>
-            </ul>
-        </nav>
-        <div class="item-3">
-            <a class="signin" href="#"><button>Sign in</button></a>
-            <a class="signup" href="#"><button>Sign up</button></a>
+    <header>   
+        <a href="index.html" class="logo"><i class='bx bxs-briefcase'></i><span>Portfolio.</span></a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Accueil</a></li>
+            <li><a href="./Pages/profil.html">Profil</a></li>
+            <li><a href="./Pages/btssio.html">BTS SIO</a></li>
+            <li><a href="./Pages/ecole.html">Ecole</a></li>  
+            <li><a href="./Pages/entreprise.html">Entreprise</a></li> 
+            <li><a href="./Pages/veilletechno.html">Veille Technologique</a></li> 
+        </ul>
+    </header>
+    <main>
+        <div class="profil-page">
+            <h1>Florent Bernier</h1>
+            <p> Bienvenue sur mon portfolio ! Ce portfolio me suivra tout au long de mes années en BTS 
+                et me servira de support pour y déposer les documents.
+            </p>
+            <button type="button">Mes réseaux</button>
+            <div class="reseaux"></div>
         </div>
-    </header> 
+    </main>
 </body>
 </html>
 

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root {
+    --main-color: #FF4848;
+    --bg-color: #F5F5F5;
+
+    --text-color: #24252A;
+    --text-color2: #fff;
+
+    --active-color: #FF4848;
+
+    --icone-color : #FF4848;
+}
+
+/******************/
+/*     navbar     */
+/******************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header {
+    position: sticky 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo i {
+    color: var(--icone-color);
+    font-size: 18px;
+    margin-right: 3px;
+    animation: SlideLeft .5s ease-out;
+}
+.logo span {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+    animation: TransitionTop .5s ease;
+}
+.navbar a:hover {
+    color: var(--main-color);
+}
+.navbar a.active {
+    color: var(--active-color);
+}
+/* Index */
+div.profil-page {
+    flex-basis: 50%;
+    margin: 100px 200px;
+    text-align: center;
+}
+div.profil-page h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 50px;
+}
+div.profile-page p {
+    color: var(--text-color);
+    text-align: center;
+    text-align:justify;
+    font-size: 24px;
+    line-height: 25px;
+}
+div.profil-page button {
+    width: 180px;
+    color: var(--text-color2);
+    font-size: 16px;
+    padding: 12px 0;
+    background: var(--main-color);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+div.profil-page button:hover {
+    cursor: pointer;
+}
+
+/* Profil page  */
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50%;
+}
+div.col h1 {
+    color: var(--text-color);
+    font-size: 50px;
+}
+div.col1 p {
+    color: var(--text-color);
+    text-align: center;
+    text-align:justify;
+    font-size: 24px;
+    line-height: 25px;
+}
+div.col button {
+    width: 180px;
+    color: var(--text-color2);
+    font-size: 16px;
+    padding: 12px 0;
+    background: var(--main-color);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+div.col button:hover {
+    cursor: pointer;
+}
+div.col {
+    margin: 10px 25px;
+}
+div.row div.imgprofil img {
+    border: solid 2px red;
+    border-radius: 50%;
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 350px;
+    
+}
+div.col1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card {
+    width: 200px;
+    height: 170px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+}
+div.card h3 {
+    font-size: 12px;
+    color: var(--text-color2);
+    text-align: center;
+}
+.card1, .card2, .card3, .card4 {
+    background-image: url(../Image/image1_accueil.jpg);
+    transition: transform .2s;
+}
+
+.card1:hover, .card2:hover,.card3:hover,.card4:hover{
+    transform: scale(1.1);
+}
+
+.cards {
+    margin: 5px 25px;
+    padding: 20px 40px;
+    text-align: center
+}
+div.cards h1 {
+    background-image: url('../Image/image1_accueil.jpg');
+    color: var(--text-color2);
+    padding: 15px 25px;
+    text-align: center;
+    /* border: solid 2px red; */
+}
+div.cards button{
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    color: var(--text-color2);
+    font-size: 16px;
+    padding: 12px 0;
+    background: var(--main-color);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+div.cards.cv h1, div.cards.cv a{
+    margin: 10px 25px;
+}
+div.cards.cv button.consulter::before {
+    content: '👀';
+}
+div.cards.cv button.telecharger::before {
+    content: '🔗';
+}
+div.cards button.top::after {
+    content: '🔝';
+}
+div.presentation ul span {
+    text-transform: uppercase;
+    color: red;
+}
+div.presentation ul li {
+    display: grid;
+}
+
+/* BTS SIO */
+
+main div.container {
+    margin: 45px 55px;
+    padding: 25px 15px;
+}
+main div div.bandeau {
+    text-align: center;
+    color: var(--main-color);
+    font-size: 24px;
+}
+main div div.paragraphe h4{
+    background-image: url('../Image/image1_accueil.jpg');
+    color: var(--text-color2);
+    padding: 15px 25px;
+    text-align: center;
+    /* border: solid 2px red; */
+}
+main div div.paragraphe p {
+    margin: 15px 25px;
+    padding: 20px 30px;
+}
+main div div.align-justify {
+    margin: 15px 25px;
+}
+main div div.align-justify h2 {
+    color: var(--main-color);
+}
+
+/* Ecole */
+main div.container div.ecole {
+    margin: 20px 30px;
+    text-align: center;
+}
+main div.container div.paragraphe div.liens button {
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    color: var(--text-color2);
+    font-size: 16px;
+    padding: 12px 0;
+    background: var(--main-color);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* div.cards p {
+    margin: 15px 25px; 
+    padding: 10px 15px;
+} */
+/* .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    background: rgb(182, 182, 182);
+}
+main .container {
+    border: solid 2px red;
+    margin: 39px;
+    padding: 26px; 
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main div.container .card {
+    height: 150px;
+}
+
+.card1 {
+    font-size: 6px;
+}
+.card1 img {
+    width : 100px;
+    height: 100px;;
+} */
