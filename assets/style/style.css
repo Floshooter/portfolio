@@ -8,22 +8,22 @@
 }
 :root {
   --white-color: #fff;
-  --blue-color: #4070f4;
+  --purple-color: #6828E3;
   --grey-color: #707070;
-  --grey-color-light: #aaa;
+  --black-color-light: #181824;
 }
 body {
-  background-color: #e7f2fd;
+  background-color: #D0E8F6;
   transition: all 0.5s ease;
 }
 body.dark {
-  background-color: #333;
+  background-color: #666;
 }
 body.dark {
   --white-color: #333;
-  --blue-color: #fff;
+  --purple-color: #D0E8F6;
   --grey-color: #f2f2f2;
-  --grey-color-light: #aaa;
+  --black-color-light: #aaa;
 }
 
 /* navbar */
@@ -38,7 +38,7 @@ body.dark {
   justify-content: space-between;
   padding: 15px 30px;
   z-index: 1000;
-  box-shadow: 0 0 2px var(--grey-color-light);
+  box-shadow: 0 0 2px var(--black-color-light);
 }
 .logo_item {
   display: flex;
@@ -47,7 +47,7 @@ body.dark {
   font-size: 22px;
   font-weight: 500;
   text-decoration: none;
-  color: var(--blue-color);
+  color: var(--purple-color);
 }
 .navbar img {
   width: 35px;
@@ -67,7 +67,7 @@ body.dark {
   outline: none;
   background-color: var(--white-color);
   color: var(--grey-color);
-  border: 1px solid var(--grey-color-light);
+  border: 1px solid var(--black-color-light);
   padding: 0 20px;
 }
 .navbar_content {
@@ -92,7 +92,7 @@ body.dark {
   padding: 80px 20px;
   z-index: 100;
   overflow-y: scroll;
-  box-shadow: 0 0 1px var(--grey-color-light);
+  box-shadow: 0 0 1px var(--black-color-light);
   transition: all 0.5s ease;
 }
 .sidebar.close {
@@ -135,7 +135,7 @@ body.dark {
   height: 2px;
   width: 18px;
   border-radius: 12px;
-  background: var(--grey-color-light);
+  background: var(--black-color-light);
 }
 .menu_items {
   padding: 0;
@@ -158,7 +158,7 @@ body.dark {
   left: -20px;
 }
 .navlink_icon:hover {
-  background: var(--blue-color);
+  background: var(--purple-color);
 }
 .sidebar .nav_link {
   display: flex;
@@ -175,7 +175,7 @@ body.dark {
 }
 .nav_link:hover {
   color: var(--white-color);
-  background: var(--blue-color);
+  background: var(--purple-color);
 }
 .sidebar.close .nav_link:hover {
   background: var(--white-color);
@@ -222,7 +222,7 @@ body.dark {
   text-align: center;
   width: 100%;
   color: var(--grey-color);
-  border-top: 1px solid var(--grey-color-light);
+  border-top: 1px solid var(--black-color-light);
   background-color: var(--white-color);
 }
 .bottom i {
