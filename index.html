@@ -11,34 +11,35 @@
         <link rel="shortcut icon" href="./Image/briefcase-solid-24.png" />
         <title>Portfolio - Florent Bernier</title>    
         <!-- Script & style -->
-        <script src="./assets/scripts/app.js" defer></script>
-        <link rel="stylesheet" href="./assets/style/style.css" />
+        <script src="./assets/scripts/eastereggs.js" defer></script>
+        <script src="../assets/scripts/app.js" defer></script>
+        <link rel="stylesheet" href="../assets/style/style.css" />
     </head>
     <body>
         <!-- navbar -->
         <nav class="navbar">
-            <a href="./index.html" class="logo_item">
+            <a href="../index.html" class="logo_item">
                 <i class="bx bx-menu" id="sidebarOpen"></i>
-                <img src="./assets/Image/photoflo.png" alt=""></i>Florent Bernier
+                <img src="../assets/Image/photoflo.png" alt=""></i>Florent Bernier
             </a>
             <div class="search_bar">
-                <input type="text" placeholder="que cherchez-vous ?" />
+                <input type="text" id="searchInput" placeholder="que cherchez-vous ?" />
             </div>
             <div class="navbar_content">
                 <i class="bi bi-grid"></i>
                 <i class='bx bx-sun' id="darkLight"></i>
                 <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
-                <img src="./assets/Image/photoflo.png" alt="" class="profile" />
+                <img src="../assets/Image/photoflo.png" alt="" class="profile" />
             </div>
-            </nav>
-            <!-- sidebar -->
-            <nav class="sidebar">
+        </nav>
+        <!-- sidebar -->
+        <nav class="sidebar">
             <div class="menu_content">
                 <!-- Partie dashboard -->
                 <ul class="menu_items">
                     <div class="menu_title menu_dashboard"></div>
                     <li class="item">
-                        <a href="./index.html" class="nav_link submenu_item">
+                        <a href="../index.html" class="nav_link submenu_item">
                         <span class="navlink_icon">
                             <i class="bx bx-home-alt"></i>
                         </span>
@@ -46,7 +47,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="./Pages/profil.html" class="nav_link">
+                        <a href="./profil.html" class="nav_link">
                         <span class="navlink_icon">
                             <i class='bx bx-user'></i>
                         </span>
@@ -58,7 +59,7 @@
                 <ul class="menu_items">
                     <div class="menu_title menu_formation"></div>
                     <li class="item">
-                        <a href="./Pages/btssio.html" class="nav_link">
+                        <a href="./btssio.html" class="nav_link">
                         <span class="navlink_icon">
                             <i class='bx bx-book'></i>
                         </span>
@@ -66,7 +67,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="./Pages/ecole.html" class="nav_link">
+                        <a href="./ecole.html" class="nav_link">
                         <span class="navlink_icon">
                             <i class='bx bxs-graduation'></i>
                         </span>
@@ -74,7 +75,7 @@
                         </a>
                     </li>
                     <li class="item">
-                        <a href="./Pages/entreprise.html" class="nav_link">
+                        <a href="./entreprise.html" class="nav_link">
                         <span class="navlink_icon">
                             <i class='bx bx-briefcase'></i>
                         </span>
@@ -90,7 +91,7 @@
                             <i class="bx bx-chevron-right arrow-left"></i>
                         </div>
                         <ul class="menu_items submenu">
-                            <a href="./Pages/veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
+                            <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
                             <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
                         </ul>
                     </li>
@@ -137,24 +138,23 @@
                         </a>
                     </li>
                 </ul>
-
                 <!-- Sidebar Open / Close -->
                 <div class="bottom_content">
-                <div class="bottom expand_sidebar">
-                    <span><i class='bx bx-pin' ></i></span>
-                    <i class='bx bx-log-in' ></i>
+                    <div class="bottom expand_sidebar">
+                        <span>Epingler</span>
+                        <i class='bx bx-log-in' ></i>
+                    </div>
+                    <div class="bottom collapse_sidebar">
+                        <span>Diminuer</span>
+                        <i class='bx bx-log-out'></i>
+                    </div>
                 </div>
-                <div class="bottom collapse_sidebar">
-                    <span><i class='bx bx-play-circle'></i></span>
-                    <i class='bx bx-log-out'></i>
-                </div>
-                </div>
+                <!-- Contenu -->
+                <section>
+                    
+                </section>
             </div>
         </nav>
-        <!-- Partie contenue -->
-        <main>
-            <div>test</div>
-        </main>
     </body>
 </html>
 
