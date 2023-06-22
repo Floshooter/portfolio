@@ -262,3 +262,15 @@ body.dark {
     left: -100%;
   }
 }
+/* Définissez l'animation de secousse */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 5px); }
+  20%, 40%, 60%, 80% { transform: translate(5px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Appliquez l'animation de secousse aux éléments */
+.shake-animation {
+  animation: shake 0.5s linear;
+}

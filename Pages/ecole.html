@@ -1,53 +1,178 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- Javascript & CSS-->
-    <link rel="stylesheet" href="../Templates/style.css">
-    <script src="../Templates/app.js"></script>
-    <!-- Logo et titre -->
-    <link rel="shortcut icon" href="../Image/briefcase-solid-24.png" />
-    <title>Portfolio - Florent Bernier</title>
-</head>
-<body>
-    <header>   
-        <a href="../index.html" class="logo"><i class='bx bxs-briefcase'></i><span>Portfolio.</span></a>
-        <ul class="navbar">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="./profil.html">Profil</a></li>
-            <li><a href="./btssio.html">BTS SIO</a></li>
-            <li><a href="./ecole.html" class="active">Ecole</a></li>  
-            <li><a href="./entreprise.html">Entreprise</a></li> 
-            <li><a href="veilletechno.html">Veille Technologique</a></li>
-        </ul>
-    </header>
-    <main class="flex-shrink-0">
-        <div class="container">
-            <div class="bandeau rounded">
-                <h1 class="text-center font-index-h1">Projets Ecole</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Boxicons & Icons CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!-- Titre -->
+        <link rel="shortcut icon" href="./Image/briefcase-solid-24.png" />
+        <title>Portfolio - Florent Bernier</title>    
+        <!-- Script & style -->
+        <script src="../assets/scripts/app.js" defer></script>
+        <link rel="stylesheet" href="../assets/style/style.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="../index.html" class="logo_item">
+                <i class="bx bx-menu" id="sidebarOpen"></i>
+                <img src="../assets/Image/photoflo.png" alt=""></i>Florent Bernier
+            </a>
+            <div class="search_bar">
+                <input type="text" placeholder="que cherchez-vous ?" />
             </div>
-            <div class="paragraphe ecole">
-                <h4 class="font-h4 "style="text-align:center;">Documentation</h4>
-                <div class="liens">
-                    <a class="bouton "  href="../Image/GLPI - Florent Bernier.pdf" target="_blank"><button>GLPI</button></a>
-                    <a  href="../Image/Projet Bibliothèque - Florent Bernier.pdf" class="bouton" target="_blank"><button>Projet Bibliothèqe</button></a> 
+            <div class="navbar_content">
+                <i class="bi bi-grid"></i>
+                <i class='bx bx-sun' id="darkLight"></i>
+                <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
+                <img src="../assets/Image/photoflo.png" alt="" class="profile" />
+            </div>
+            </nav>
+            <!-- sidebar -->
+            <nav class="sidebar">
+            <div class="menu_content">
+                <!-- Partie dashboard -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_dashboard"></div>
+                    <li class="item">
+                        <a href="../index.html" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-home-alt"></i>
+                        </span>
+                        <span class="navlink">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./profil.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bx-user'></i>
+                        </span>
+                        <span class="navlink">Profil</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Partie formation -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_formation"></div>
+                    <li class="item">
+                        <a href="./btssio.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bx-book'></i>
+                        </span>
+                        <span class="navlink">BTS SIO</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./ecole.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-graduation'></i>
+                        </span>
+                        <span class="navlink">Ecole</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./entreprise.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bx-briefcase'></i>
+                        </span>
+                        <span class="navlink">Entreprise</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink_icon">
+                                <i class='bx bx-folder'></i>
+                            </span>
+                            <span class="navlink">Veilles</span>
+                            <i class="bx bx-chevron-right arrow-left"></i>
+                        </div>
+                        <ul class="menu_items submenu">
+                            <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
+                            <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Partie autre -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_autre"></div>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink_icon">
+                                <i class='bx bx-conversation'></i>
+                            </span>
+                            <span class="navlink">Mes réseaux</span>
+                            <i class="bx bx-chevron-right arrow-left"></i>
+                        </div>
+                        <ul class="menu_items submenu">
+                            <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
+                            <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                            <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink_icon">
+                                <i class='bx bx-pin'></i>
+                            </span>
+                            <span class="navlink">Projets perso</span>
+                            <i class="bx bx-chevron-right arrow-left"></i>
+                        </div>
+                        <ul class="menu_items submenu">
+                            <a href="#" class="nav_link sublink">In progress...</a>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Partie setting -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_setting"></div>
+                    <li class="item">
+                        <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-cog"></i>
+                        </span>
+                        <span class="navlink">Setting</span> <!-- Pleins d'options funs/utiles/inutiles... -->
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Sidebar Open / Close -->
+                <div class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span><i class='bx bx-pin' ></i></span>
+                    <i class='bx bx-log-in' ></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span><i class='bx bx-play-circle'></i></span>
+                    <i class='bx bx-log-out'></i>
+                </div>
                 </div>
             </div>
-            <div class="paragraphe ecole">
-                <h4 class="font-h4 "style="text-align:center;">Ateliers Professionnels</h4>
-                <div class="liens">
-                    <a class="bouton"  href="../Image/Horizon.zip" target=""><button>AP 1</button></a>
-                    <a class="bouton" href="" target=""><button>AP 2</button></a> 
-                    <a class="bouton" href="" target=""><button>AP3</button></a>
-                    <a class="bouton" href="" target=""><button>AP4</button></a>
+        </nav>
+        <main class="flex-shrink-0">
+            <div class="container">
+                <div class="bandeau rounded">
+                    <h1 class="text-center font-index-h1">Projets Ecole</h1>
+                </div>
+                <div class="paragraphe ecole">
+                    <h4 class="font-h4 "style="text-align:center;">Documentation</h4>
+                    <div class="liens">
+                        <a class="bouton "  href="../Image/GLPI - Florent Bernier.pdf" target="_blank"><button>GLPI</button></a>
+                        <a  href="../Image/Projet Bibliothèque - Florent Bernier.pdf" class="bouton" target="_blank"><button>Projet Bibliothèqe</button></a> 
+                    </div>
+                </div>
+                <div class="paragraphe ecole">
+                    <h4 class="font-h4 "style="text-align:center;">Ateliers Professionnels</h4>
+                    <div class="liens">
+                        <a class="bouton"  href="../Image/Horizon.zip" target=""><button>AP 1</button></a>
+                        <a class="bouton" href="" target=""><button>AP 2</button></a> 
+                        <a class="bouton" href="" target=""><button>AP3</button></a>
+                        <a class="bouton" href="" target=""><button>AP4</button></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>

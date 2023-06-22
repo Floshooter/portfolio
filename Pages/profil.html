@@ -1,97 +1,222 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!-- Javascript & CSS-->
-    <link rel="stylesheet" href="../Templates/style.css">
-    <script src="../Templates/app.js"></script>
-    <!-- Logo et titre -->
-    <link rel="shortcut icon" href="../Image/briefcase-solid-24.png" />
-    <title>Portfolio - Florent Bernier</title>
-</head>
-<body>
-    <header>   
-        <a href="../index.html" class="logo"><i class='bx bxs-briefcase'></i><span>Portfolio.</span></a>
-        <ul class="navbar">
-            <li><a href="../index.html">Accueil</a></li>
-            <li><a href="./profil.html" class="active">Profil</a></li>
-            <li><a href="./btssio.html">BTS SIO</a></li>
-            <li><a href="./ecole.html">Ecole</a></li>  
-            <li><a href="./entreprise.html">Entreprise</a></li> 
-            <li><a href="veilletechno.html">Veille Technologique</a></li>
-        </ul>
-    </header>
-    <main class="main-content">
-        <div class="row">
-            <div class="col imgprofil">
-                <img class="photoprofil" src="../Image/photoflo.png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Boxicons & Icons CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <!-- Titre -->
+        <link rel="shortcut icon" href="./Image/briefcase-solid-24.png" />
+        <title>Portfolio - Florent Bernier</title>    
+        <!-- Script & style -->
+        <script src="../assets/scripts/app.js" defer></script>
+        <link rel="stylesheet" href="../assets/style/style.css" />
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <a href="../index.html" class="logo_item">
+                <i class="bx bx-menu" id="sidebarOpen"></i>
+                <img src="../assets/Image/photoflo.png" alt=""></i>Florent Bernier
+            </a>
+            <div class="search_bar">
+                <input type="text" placeholder="que cherchez-vous ?" />
             </div>
-            <div class="col col2">
-                <a href="#presentation">
-                    <div class="card card1">
-                        <h3>Présentation</h3>
-                    </div>
-                </a>
-                <a href="#info-pro">
-                    <div class="card card2">
-                        <h3>Informations professionels</h3>
-                    </div>
-                </a>
-                <a href="#cv">
-                    <div class="card card3">
-                        <h3>CV</h3>
-                    </div>
-                </a>
-                <a href="#ob-projet">
-                    <div class="card card4" id="">
-                        <h3>Objectif et projet professionels</h3>
-                    </div>
-                </a>
+            <div class="navbar_content">
+                <i class="bi bi-grid"></i>
+                <i class='bx bx-sun' id="darkLight"></i>
+                <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
+                <img src="../assets/Image/photoflo.png" alt="" class="profile" />
             </div>
-        </div>
-        <div class="cards presentation" id="presentation">
-            <h1>A propos de moi</h1>
-            <ul>
-                <li><span>Nom :</span> Bernier</li>
-                <li><span>Prénom :</span> Florent</li>
-                <li><span>Né le :</span> 26-09-2002</li>
-                <li><span>Âge :</span> 20 ans</li>
-                <li><span>Etude :</span> BTS SIO - SLAM</li>
-                <li><span>Email :</span> florent.bernier1@gmail.com</li>
-                <li><a href="#">Mon Linkedin</a></li>
-            </ul>
-            <a href="#top"><button class="top">Revenir en haut de page</button></a>
-        </div>
-        <div class="cards info-pro" id="info-pro">
-            <h1>Informations de professionnelles</h1>
-            <p>
-                N'ayant pas su quoi faire comme formation, j'ai finalement décider de faire
-                un bac STI2D avec option SIN (Système de l'information et du numérique). Par la suite, 
-                je suis rentré dans une classe préparatoire intégrée dans le but d'aller dans le domaine 
-                de l'informatique. Cependant, après deux ans dans cette école, j'ai finalement trouvé ma voie 
-                dans un BTS SIO avec option SLAM (Solutions Logicielles et Applications Métiers).
-            </p>
-            <a href="#top"><button class="top">Revenir en haut de page</button></a>
-        </div>
-        <div class="cards cv" id="cv">
-            <h1>Mon CV</h1>
-            <a href="../Image/bernier-florent-cv (5).pdf"><button class="consulter">Consulter mon CV</button></a>
-            <a href="../Image/bernier-florent-cv (5).pdf" download="cv-bernier_florent.pdf"><button class="telecharger">Télécharger mon CV</button></a>
-        </div>
-        <div class="cards ob-projet" id="ob-projet">
-            <h1>Objectifs et projets personnels</h1>
-            <p>
-                Après mes années de BTS, je souhaiterai continuer avec la licence afin d'obtenir un diplôme 
-                me permettant de travailler l'année suivante. Si possible, continuer vers un master dans le jeu vidéo, 
-                un domaine dans lequel j'aimerai y faire carrière.
-            </p>
-            <a href="#top"><button class="top">Revenir en haut de page</button></a>
-        </div>
-    </main>
-</body>
+            </nav>
+            <!-- sidebar -->
+            <nav class="sidebar">
+            <div class="menu_content">
+                <!-- Partie dashboard -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_dashboard"></div>
+                    <li class="item">
+                        <a href="../index.html" class="nav_link submenu_item">
+                        <span class="navlink_icon">
+                            <i class="bx bx-home-alt"></i>
+                        </span>
+                        <span class="navlink">Accueil</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./profil.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bx-user'></i>
+                        </span>
+                        <span class="navlink">Profil</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Partie formation -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_formation"></div>
+                    <li class="item">
+                        <a href="./btssio.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bx-book'></i>
+                        </span>
+                        <span class="navlink">BTS SIO</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./ecole.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bxs-graduation'></i>
+                        </span>
+                        <span class="navlink">Ecole</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./entreprise.html" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class='bx bx-briefcase'></i>
+                        </span>
+                        <span class="navlink">Entreprise</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink_icon">
+                                <i class='bx bx-folder'></i>
+                            </span>
+                            <span class="navlink">Veilles</span>
+                            <i class="bx bx-chevron-right arrow-left"></i>
+                        </div>
+                        <ul class="menu_items submenu">
+                            <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
+                            <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Partie autre -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_autre"></div>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink_icon">
+                                <i class='bx bx-conversation'></i>
+                            </span>
+                            <span class="navlink">Mes réseaux</span>
+                            <i class="bx bx-chevron-right arrow-left"></i>
+                        </div>
+                        <ul class="menu_items submenu">
+                            <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
+                            <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                            <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
+                        </ul>
+                    </li>
+                    <li class="item">
+                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink_icon">
+                                <i class='bx bx-pin'></i>
+                            </span>
+                            <span class="navlink">Projets perso</span>
+                            <i class="bx bx-chevron-right arrow-left"></i>
+                        </div>
+                        <ul class="menu_items submenu">
+                            <a href="#" class="nav_link sublink">In progress...</a>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Partie setting -->
+                <ul class="menu_items">
+                    <div class="menu_title menu_setting"></div>
+                    <li class="item">
+                        <a href="#" class="nav_link">
+                        <span class="navlink_icon">
+                            <i class="bx bx-cog"></i>
+                        </span>
+                        <span class="navlink">Setting</span> <!-- Pleins d'options funs/utiles/inutiles... -->
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Sidebar Open / Close -->
+                <div class="bottom_content">
+                <div class="bottom expand_sidebar">
+                    <span><i class='bx bx-pin' ></i></span>
+                    <i class='bx bx-log-in' ></i>
+                </div>
+                <div class="bottom collapse_sidebar">
+                    <span><i class='bx bx-play-circle'></i></span>
+                    <i class='bx bx-log-out'></i>
+                </div>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="row">
+                <div class="col imgprofil">
+                    <img class="photoprofil" src="../Image/photoflo.png">
+                </div>
+                <div class="col col2">
+                    <a href="#presentation">
+                        <div class="card card1">
+                            <h3>Présentation</h3>
+                        </div>
+                    </a>
+                    <a href="#info-pro">
+                        <div class="card card2">
+                            <h3>Informations professionels</h3>
+                        </div>
+                    </a>
+                    <a href="#cv">
+                        <div class="card card3">
+                            <h3>CV</h3>
+                        </div>
+                    </a>
+                    <a href="#ob-projet">
+                        <div class="card card4" id="">
+                            <h3>Objectif et projet professionels</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="cards presentation" id="presentation">
+                <h1>A propos de moi</h1>
+                <ul>
+                    <li><span>Nom :</span> Bernier</li>
+                    <li><span>Prénom :</span> Florent</li>
+                    <li><span>Né le :</span> 26-09-2002</li>
+                    <li><span>Âge :</span> 20 ans</li>
+                    <li><span>Etude :</span> BTS SIO - SLAM</li>
+                    <li><span>Email :</span> florent.bernier1@gmail.com</li>
+                    <li><a href="#">Mon Linkedin</a></li>
+                </ul>
+                <a href="#top"><button class="top">Revenir en haut de page</button></a>
+            </div>
+            <div class="cards info-pro" id="info-pro">
+                <h1>Informations de professionnelles</h1>
+                <p>
+                    N'ayant pas su quoi faire comme formation, j'ai finalement décider de faire
+                    un bac STI2D avec option SIN (Système de l'information et du numérique). Par la suite, 
+                    je suis rentré dans une classe préparatoire intégrée dans le but d'aller dans le domaine 
+                    de l'informatique. Cependant, après deux ans dans cette école, j'ai finalement trouvé ma voie 
+                    dans un BTS SIO avec option SLAM (Solutions Logicielles et Applications Métiers).
+                </p>
+                <a href="#top"><button class="top">Revenir en haut de page</button></a>
+            </div>
+            <div class="cards cv" id="cv">
+                <h1>Mon CV</h1>
+                <a href="../Image/bernier-florent-cv (5).pdf"><button class="consulter">Consulter mon CV</button></a>
+                <a href="../Image/bernier-florent-cv (5).pdf" download="cv-bernier_florent.pdf"><button class="telecharger">Télécharger mon CV</button></a>
+            </div>
+            <div class="cards ob-projet" id="ob-projet">
+                <h1>Objectifs et projets personnels</h1>
+                <p>
+                    Après mes années de BTS, je souhaiterai continuer avec la licence afin d'obtenir un diplôme 
+                    me permettant de travailler l'année suivante. Si possible, continuer vers un master dans le jeu vidéo, 
+                    un domaine dans lequel j'aimerai y faire carrière.
+                </p>
+                <a href="#top"><button class="top">Revenir en haut de page</button></a>
+            </div>
+        </main>
+    </body>
 </html>
