@@ -52,3 +52,11 @@ if (window.innerWidth < 768) {
 } else {
   sidebar.classList.remove("close");
 }
+
+// Index page button 
+var toggleBtn = document.getElementById("toggleBtn");
+var socialMenu = document.getElementById("socialMenu");
+
+toggleBtn.addEventListener("click", function() {
+  socialMenu.classList.toggle("show");
+});

@@ -8,9 +8,13 @@
 }
 :root {
   --white-color: #fff;
-  --purple-color: #6828E3;
+  --purple-color: #6826e3;
   --grey-color: #707070;
   --black-color-light: #181824;
+  --highlight: rgba(104, 38, 227, 0.8);
+
+  --sidebar-size: 15%;
+  --sidebar-size2: 20%
 }
 body {
   background-color: #D0E8F6;
@@ -26,6 +30,14 @@ body.dark {
   --black-color-light: #aaa;
 }
 
+.container {
+  position: relative;
+  /* max-height: 1000px; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
 /* navbar */
 .navbar {
   position: fixed;
@@ -84,8 +96,7 @@ body.dark {
 /* sidebar */
 .sidebar {
   background-color: var(--white-color);
-  width: 260px;
-  position: fixed;
+  width: var(--sidebar-size2);
   top: 0;
   left: 0;
   height: 100%;
@@ -205,10 +216,9 @@ body.dark {
   padding: 15px 15px 15px 52px;
 }
 .bottom_content {
-  position: fixed;
   bottom: 60px;
   left: 0;
-  width: 260px;
+  width: var(--sidebar-size2);
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -262,6 +272,107 @@ body.dark {
     left: -100%;
   }
 }
+@media screen and (max-width: 1080px) {
+  .sidebar, .bottom_content {
+    width: var(--sidebar-size);
+  }
+}
+.main_content, .sidebar {
+  float: left;
+}
+.main_content {
+  height: 100%;
+  width: 80%;
+  /* border: solid 2px red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+section.index-page {
+  flex-basis: 50%;
+  margin: 100px 200px;
+  text-align: center;
+}
+section.index-page h1 {
+  color: var(--purple-color);
+  text-shadow: 0 0 5px var(--highlight);
+  text-align: center;
+  font-size: 50px;
+}
+section.index-page h2 {
+  color: var(--grey-color);
+  text-align: center;
+  font-size: 24px;
+  line-height: 25px;
+  margin: 1rem;
+}
+section.index-page p {
+  color: var(--grey-color);
+  text-align: justify;
+  margin: 1rem;
+}
+section.index-page button {
+  width: 180px;
+  color: var(--white-color);
+  border: solid 2px var(--black-color-light);
+  font-size: 16px;
+  padding: 12px 0;
+  background: var(--purple-color);
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+#socialMenu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+#socialMenu.show {
+  display: block;
+}
+#socialMenu li {
+  margin-bottom: 10px;
+}
+#socialMenu li:last-child {
+  margin-bottom: 0;
+}
+#socialMenu a {
+  color: #6826e3;
+  text-decoration: none;
+}
+#socialMenu a:hover {
+  color: #8a57f7;
+}
+
+section.index-page button:hover {
+  cursor: pointer;
+}
+
+.highlight {
+  color: var(--highlight);
+}
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    border: solid 2px #9c9cba;
+  }
+  50% {
+    transform: scale(1.1);
+    border: solid 2px #4f4f75;
+  }
+  100% {
+    transform: scale(1);
+    border: solid 2px #21214d;
+  }
+}
+/* Easter eggs */
 /* Définissez l'animation de secousse */
 @keyframes shake {
   0% { transform: translate(0, 0); }
