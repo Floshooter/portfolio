@@ -8,206 +8,211 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <!-- Titre -->
-        <link rel="shortcut icon" href="../assets/Image/briefcase-solid-24.png" />
+        <link rel="shortcut icon" href="./assets/Image/briefcase-solid-24.png" />
         <title>Portfolio - Florent Bernier</title>    
         <!-- Script & style -->
+        <script src="../assets/scripts/eastereggs.js" defer></script>
         <script src="../assets/scripts/app.js" defer></script>
         <link rel="stylesheet" href="../assets/style/style.css" />
     </head>
     <body>
-        <!-- navbar -->
-        <nav class="navbar">
-            <a href="../index.html" class="logo_item">
-                <i class="bx bx-menu" id="sidebarOpen"></i>
-                <img src="../assets/Image/photoflo.png" alt=""></i>Florent Bernier
-            </a>
-            <div class="search_bar">
-                <input type="text" placeholder="que cherchez-vous ?" />
-            </div>
-            <div class="navbar_content">
-                <i class="bi bi-grid"></i>
-                <i class='bx bx-sun' id="darkLight"></i>
-                <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
-                <img src="../assets/Image/photoflo.png" alt="" class="profile" />
-            </div>
+        <div class="container">
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="../index.html" class="logo_item">
+                    <i class="bx bx-menu" id="sidebarOpen"></i>
+                    <img src="../assets/Image/photoflo.png" class="index-profile" alt="">Florent Bernier
+                </a>
+                <div class="search_bar">
+                    <input type="text" id="searchInput" placeholder="que cherchez-vous ?" />
+                </div>
+                <div class="navbar_content">
+                    <i class="bi bi-grid"></i>
+                    <i class='bx bx-sun' id="darkLight"></i>
+                    <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
+                    <img src="../assets/Image/briefcase-solid-24.png" alt="" class="profile" />
+                </div>
             </nav>
+
             <!-- sidebar -->
             <nav class="sidebar">
-            <div class="menu_content">
-                <!-- Partie dashboard -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_dashboard"></div>
-                    <li class="item">
-                        <a href="../index.html" class="nav_link submenu_item">
-                        <span class="navlink_icon">
-                            <i class="bx bx-home-alt"></i>
-                        </span>
-                        <span class="navlink">Accueil</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./profil.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bx-user'></i>
-                        </span>
-                        <span class="navlink">Profil</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- Partie formation -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_formation"></div>
-                    <li class="item">
-                        <a href="./btssio.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bx-book'></i>
-                        </span>
-                        <span class="navlink">BTS SIO</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./ecole.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bxs-graduation'></i>
-                        </span>
-                        <span class="navlink">Ecole</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./entreprise.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bx-briefcase'></i>
-                        </span>
-                        <span class="navlink">Entreprise</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
+                <div class="menu_content">
+                    <!-- Partie dashboard -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_dashboard"></div>
+                        <li class="item">
+                            <a href="../index.html" class="nav_link submenu_item">
                             <span class="navlink_icon">
-                                <i class='bx bx-folder'></i>
+                                <i class="bx bx-home-alt"></i>
                             </span>
-                            <span class="navlink">Veilles</span>
-                            <i class="bx bx-chevron-right arrow-left"></i>
-                        </div>
-                        <ul class="menu_items submenu">
-                            <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
-                            <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- Partie autre -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_autre"></div>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink">Accueil</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="./profil.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-user'></i>
+                                </span>
+                                <span class="navlink">Profil</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Partie formation -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_formation"></div>
+                        <li class="item">
+                            <a href="./btssio.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-book'></i>
+                                </span>
+                                <span class="navlink">BTS SIO</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="./ecole.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bxs-graduation'></i>
+                                </span>
+                                <span class="navlink">Ecole</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="./entreprise.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-briefcase'></i>
+                                </span>
+                                <span class="navlink">Entreprise</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <div href="#" class="nav_link submenu_item">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-folder'></i>
+                                </span>
+                                <span class="navlink">Veilles</span>
+                                <i class="bx bx-chevron-right arrow-left"></i>
+                            </div>
+                            <ul class="menu_items submenu">
+                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
+                                <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Partie autre -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_autre"></div>
+                        <li class="item">
+                            <div href="#" class="nav_link submenu_item">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-conversation'></i>
+                                </span>
+                                <span class="navlink">Mes réseaux</span>
+                                <i class="bx bx-chevron-right arrow-left"></i>
+                            </div>
+                            <ul class="menu_items submenu">
+                                <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
+                                <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                                <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <div href="#" class="nav_link submenu_item">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-pin'></i>
+                                </span>
+                                <span class="navlink">Projets perso</span>
+                                <i class="bx bx-chevron-right arrow-left"></i>
+                            </div>
+                            <ul class="menu_items submenu">
+                                <a href="#" class="nav_link sublink">In progress...</a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Partie setting -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_setting"></div>
+                        <li class="item">
+                            <a href="#" class="nav_link">
                             <span class="navlink_icon">
-                                <i class='bx bx-conversation'></i>
+                                <i class="bx bx-cog"></i>
                             </span>
-                            <span class="navlink">Mes réseaux</span>
-                            <i class="bx bx-chevron-right arrow-left"></i>
+                            <span class="navlink">Settings</span> <!-- Pleins d'options funs/utiles/inutiles... -->
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Sidebar Open / Close -->
+                    <div class="bottom_content">
+                        <div class="bottom expand_sidebar">
+                            <span>Epingler</span>
+                            <i class='bx bx-log-in' ></i>
                         </div>
-                        <ul class="menu_items submenu">
-                            <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
-                            <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
-                            <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
-                            <span class="navlink_icon">
-                                <i class='bx bx-pin'></i>
-                            </span>
-                            <span class="navlink">Projets perso</span>
-                            <i class="bx bx-chevron-right arrow-left"></i>
+                        <div class="bottom collapse_sidebar">
+                            <span>Diminuer</span>
+                            <i class='bx bx-log-out'></i>
                         </div>
-                        <ul class="menu_items submenu">
-                            <a href="#" class="nav_link sublink">In progress...</a>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- Partie setting -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_setting"></div>
-                    <li class="item">
-                        <a href="#" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class="bx bx-cog"></i>
-                        </span>
-                        <span class="navlink">Setting</span> <!-- Pleins d'options funs/utiles/inutiles... -->
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+            </nav>
 
-                <!-- Sidebar Open / Close -->
-                <div class="bottom_content">
-                <div class="bottom expand_sidebar">
-                    <span><i class='bx bx-pin' ></i></span>
-                    <i class='bx bx-log-in' ></i>
-                </div>
-                <div class="bottom collapse_sidebar">
-                    <span><i class='bx bx-play-circle'></i></span>
-                    <i class='bx bx-log-out'></i>
-                </div>
-                </div>
-            </div>
-        </nav>
-        <main class="flex-shrink-0">
-            <div class="container">     
-                <div class="bandeau rounded">
-                    <h1 class="text-center font-index-h1">BTS SIO</h1>
-                </div>
-                <div class="paragraphe">
-                    <h4 class="font-h4" style="text-align:center;"> Présentation du BTS SIO </h4> 
-                    <p class="alinea"> 
-                        Le BTS SIO - Brevet du Technicien Supérieur Services Informatiques aux Organisations - se prépare sur une période de deux ans 
-                        et s'adresse aux personnes qui souhaitent devenir développeur ou s'orienter dans l'administration des systèmes et réseaux. Pour ma part, j'ai
-                        choisi de faire un BTS SIO pour m'orienter dans la seconde option. Pendant la première année, j'ai suivi des cours en développement et en réseau,
-                        mon choix s'est ainsi confirmé sur l'option SISR. 
-                    </p>
-                </div>
-                <div class="row align-justify">
-                    <div class="col">
-                        <h2 class="font-h2 align-justify"><u>Option SISR</u></h2>
-                        <h3 class="font-h3 align-justify">Débouchés :</h3>
-                        <ul>
-                            <li>Technicien de production</li>
-                            <li>Technicien d’infrastructure</li>
-                            <li>Technicien réseau et télécoms</li>
-                            <li>Technicien systèmes et réseaux</li>
-                            <li>Administrateur systèmes et réseaux</li>
-                            <li>Support systèmes et réseaux</li>
-                            <li>Pilote d’exploitation</li>
-                            <li>Informaticien support et déploiement </li>
-                        </ul>
+            <!-- Contenu principal du site -->
+            <main class="main_content">
+                <section class="index-page">
+                    <div class="bandeau rounded">
+                        <h1 class="text-center font-index-h1">BTS SIO</h1>
                     </div>
-                    <div class="col">
-                        <h2 class="font-h2 align-justify"><u>Option SLAM</u></h2>
-                        <h3 class="font-h3 align-justify">Débouchés :</h3>
-                        <ul>
-                            <li>Développeur d'applications informatiques</li>
-                            <li>Développeur informatique</li>
-                            <li>Analyste d'applications ou d'études</li>
-                            <li>Analyste programmeur</li>
-                            <li>Chargé d'études informatiques</li>
-                            <li>Informaticien d'études</li>
-                            <li>Programmeur analyste</li>
-                            <li>Programmeur d'applications</li>
-                            <li>Responsable des services applicatifs</li>
-                            <li>Technicien d'études informatiques</li>
-                        </ul>
+                    <div class="paragraphe">
+                        <h4 class="font-h4" style="text-align:center;"> Présentation du BTS SIO </h4> 
+                        <p class="alinea"> 
+                            Le BTS SIO - Brevet du Technicien Supérieur Services Informatiques aux Organisations - se prépare sur une période de deux ans 
+                            et s'adresse aux personnes qui souhaitent devenir développeur ou s'orienter dans l'administration des systèmes et réseaux. Pour ma part, j'ai
+                            choisi de faire un BTS SIO pour m'orienter dans la seconde option. Pendant la première année, j'ai suivi des cours en développement et en réseau,
+                            mon choix s'est ainsi confirmé sur l'option SISR. 
+                        </p>
                     </div>
-                </div> 
-                <div class="paragraphe">
-                    <h4 class="font-h4" style="text-align:center;"> La Cybersécurité </h4>
-                    <p class="alinea">
-                        Cette année le référentiel a changé pour répondre au besoin actuel du domaine informatique. 
-                        La sécurité des données professionnelles et personnelles sont un enjeu important pour chaque entreprise. Au vu de l'augmentation 
-                        des vols de données et de l'évolution des techniques d'arnaques, les entreprises souhaitent développer la cybersécurité.
-                        C'est à cet effet, que le BTS SIO s'est réformé et est maintenant plus axé sur la sécurité. Les deux sections apprennent 
-                        donc à sécuriser leurs codes pour les SLAM et l'Infrastructure réseau pour les SISR. 
-                    </p>
-                </div>
-            </div>
-        </main>
+                    <div class="row align-justify">
+                        <div class="col">
+                            <h2 class="font-h2 align-justify"><u>Option SISR</u></h2>
+                            <h3 class="font-h3 align-justify">Débouchés :</h3>
+                            <ul>
+                                <li>Technicien de production</li>
+                                <li>Technicien d’infrastructure</li>
+                                <li>Technicien réseau et télécoms</li>
+                                <li>Technicien systèmes et réseaux</li>
+                                <li>Administrateur systèmes et réseaux</li>
+                                <li>Support systèmes et réseaux</li>
+                                <li>Pilote d’exploitation</li>
+                                <li>Informaticien support et déploiement </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h2 class="font-h2 align-justify"><u>Option SLAM</u></h2>
+                            <h3 class="font-h3 align-justify">Débouchés :</h3>
+                            <ul>
+                                <li>Développeur d'applications informatiques</li>
+                                <li>Développeur informatique</li>
+                                <li>Analyste d'applications ou d'études</li>
+                                <li>Analyste programmeur</li>
+                                <li>Chargé d'études informatiques</li>
+                                <li>Informaticien d'études</li>
+                                <li>Programmeur analyste</li>
+                                <li>Programmeur d'applications</li>
+                                <li>Responsable des services applicatifs</li>
+                                <li>Technicien d'études informatiques</li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="paragraphe">
+                        <h4 class="font-h4" style="text-align:center;"> La Cybersécurité </h4>
+                        <p class="alinea">
+                            Cette année le référentiel a changé pour répondre au besoin actuel du domaine informatique. 
+                            La sécurité des données professionnelles et personnelles sont un enjeu important pour chaque entreprise. Au vu de l'augmentation 
+                            des vols de données et de l'évolution des techniques d'arnaques, les entreprises souhaitent développer la cybersécurité.
+                            C'est à cet effet, que le BTS SIO s'est réformé et est maintenant plus axé sur la sécurité. Les deux sections apprennent 
+                            donc à sécuriser leurs codes pour les SLAM et l'Infrastructure réseau pour les SISR. 
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
     </body>
 </html>

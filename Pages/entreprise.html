@@ -8,151 +8,158 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <!-- Titre -->
-        <link rel="shortcut icon" href="../assets/Image/briefcase-solid-24.png" />
+        <link rel="shortcut icon" href="./assets/Image/briefcase-solid-24.png" />
         <title>Portfolio - Florent Bernier</title>    
         <!-- Script & style -->
+        <script src="../assets/scripts/eastereggs.js" defer></script>
         <script src="../assets/scripts/app.js" defer></script>
         <link rel="stylesheet" href="../assets/style/style.css" />
     </head>
     <body>
-        <!-- navbar -->
-        <nav class="navbar">
-            <a href="../index.html" class="logo_item">
-                <i class="bx bx-menu" id="sidebarOpen"></i>
-                <img src="../assets/Image/photoflo.png" alt=""></i>Florent Bernier
-            </a>
-            <div class="search_bar">
-                <input type="text" placeholder="que cherchez-vous ?" />
-            </div>
-            <div class="navbar_content">
-                <i class="bi bi-grid"></i>
-                <i class='bx bx-sun' id="darkLight"></i>
-                <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
-                <img src="../assets/Image/photoflo.png" alt="" class="profile" />
-            </div>
+        <div class="container">
+            <!-- navbar -->
+            <nav class="navbar">
+                <a href="../index.html" class="logo_item">
+                    <i class="bx bx-menu" id="sidebarOpen"></i>
+                    <img src="../assets/Image/photoflo.png" class="index-profile" alt="">Florent Bernier
+                </a>
+                <div class="search_bar">
+                    <input type="text" id="searchInput" placeholder="que cherchez-vous ?" />
+                </div>
+                <div class="navbar_content">
+                    <i class="bi bi-grid"></i>
+                    <i class='bx bx-sun' id="darkLight"></i>
+                    <i class='bx bx-bell' ></i>             <!-- Bouton contact, qui affichera la notification du message -->
+                    <img src="../assets/Image/briefcase-solid-24.png" alt="" class="profile" />
+                </div>
             </nav>
+
             <!-- sidebar -->
             <nav class="sidebar">
-            <div class="menu_content">
-                <!-- Partie dashboard -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_dashboard"></div>
-                    <li class="item">
-                        <a href="../index.html" class="nav_link submenu_item">
-                        <span class="navlink_icon">
-                            <i class="bx bx-home-alt"></i>
-                        </span>
-                        <span class="navlink">Accueil</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./profil.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bx-user'></i>
-                        </span>
-                        <span class="navlink">Profil</span>
-                        </a>
-                    </li>
-                </ul>
-                <!-- Partie formation -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_formation"></div>
-                    <li class="item">
-                        <a href="./btssio.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bx-book'></i>
-                        </span>
-                        <span class="navlink">BTS SIO</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./ecole.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bxs-graduation'></i>
-                        </span>
-                        <span class="navlink">Ecole</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <a href="./entreprise.html" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class='bx bx-briefcase'></i>
-                        </span>
-                        <span class="navlink">Entreprise</span>
-                        </a>
-                    </li>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
+                <div class="menu_content">
+                    <!-- Partie dashboard -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_dashboard"></div>
+                        <li class="item">
+                            <a href="../index.html" class="nav_link submenu_item">
                             <span class="navlink_icon">
-                                <i class='bx bx-folder'></i>
+                                <i class="bx bx-home-alt"></i>
                             </span>
-                            <span class="navlink">Veilles</span>
-                            <i class="bx bx-chevron-right arrow-left"></i>
-                        </div>
-                        <ul class="menu_items submenu">
-                            <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
-                            <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- Partie autre -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_autre"></div>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
+                            <span class="navlink">Accueil</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="./profil.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-user'></i>
+                                </span>
+                                <span class="navlink">Profil</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Partie formation -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_formation"></div>
+                        <li class="item">
+                            <a href="./btssio.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-book'></i>
+                                </span>
+                                <span class="navlink">BTS SIO</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="./ecole.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bxs-graduation'></i>
+                                </span>
+                                <span class="navlink">Ecole</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="./entreprise.html" class="nav_link">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-briefcase'></i>
+                                </span>
+                                <span class="navlink">Entreprise</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <div href="#" class="nav_link submenu_item">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-folder'></i>
+                                </span>
+                                <span class="navlink">Veilles</span>
+                                <i class="bx bx-chevron-right arrow-left"></i>
+                            </div>
+                            <ul class="menu_items submenu">
+                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
+                                <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Partie autre -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_autre"></div>
+                        <li class="item">
+                            <div href="#" class="nav_link submenu_item">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-conversation'></i>
+                                </span>
+                                <span class="navlink">Mes réseaux</span>
+                                <i class="bx bx-chevron-right arrow-left"></i>
+                            </div>
+                            <ul class="menu_items submenu">
+                                <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
+                                <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                                <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
+                            </ul>
+                        </li>
+                        <li class="item">
+                            <div href="#" class="nav_link submenu_item">
+                                <span class="navlink_icon">
+                                    <i class='bx bx-pin'></i>
+                                </span>
+                                <span class="navlink">Projets perso</span>
+                                <i class="bx bx-chevron-right arrow-left"></i>
+                            </div>
+                            <ul class="menu_items submenu">
+                                <a href="#" class="nav_link sublink">In progress...</a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Partie setting -->
+                    <ul class="menu_items">
+                        <div class="menu_title menu_setting"></div>
+                        <li class="item">
+                            <a href="#" class="nav_link">
                             <span class="navlink_icon">
-                                <i class='bx bx-conversation'></i>
+                                <i class="bx bx-cog"></i>
                             </span>
-                            <span class="navlink">Mes réseaux</span>
-                            <i class="bx bx-chevron-right arrow-left"></i>
+                            <span class="navlink">Settings</span> <!-- Pleins d'options funs/utiles/inutiles... -->
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Sidebar Open / Close -->
+                    <div class="bottom_content">
+                        <div class="bottom expand_sidebar">
+                            <span>Epingler</span>
+                            <i class='bx bx-log-in' ></i>
                         </div>
-                        <ul class="menu_items submenu">
-                            <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
-                            <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
-                            <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
-                        </ul>
-                    </li>
-                    <li class="item">
-                        <div href="#" class="nav_link submenu_item">
-                            <span class="navlink_icon">
-                                <i class='bx bx-pin'></i>
-                            </span>
-                            <span class="navlink">Projets perso</span>
-                            <i class="bx bx-chevron-right arrow-left"></i>
+                        <div class="bottom collapse_sidebar">
+                            <span>Diminuer</span>
+                            <i class='bx bx-log-out'></i>
                         </div>
-                        <ul class="menu_items submenu">
-                            <a href="#" class="nav_link sublink">In progress...</a>
-                        </ul>
-                    </li>
-                </ul>
-                <!-- Partie setting -->
-                <ul class="menu_items">
-                    <div class="menu_title menu_setting"></div>
-                    <li class="item">
-                        <a href="#" class="nav_link">
-                        <span class="navlink_icon">
-                            <i class="bx bx-cog"></i>
-                        </span>
-                        <span class="navlink">Setting</span> <!-- Pleins d'options funs/utiles/inutiles... -->
-                        </a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+            </nav>
 
-                <!-- Sidebar Open / Close -->
-                <div class="bottom_content">
-                <div class="bottom expand_sidebar">
-                    <span><i class='bx bx-pin' ></i></span>
-                    <i class='bx bx-log-in' ></i>
-                </div>
-                <div class="bottom collapse_sidebar">
-                    <span><i class='bx bx-play-circle'></i></span>
-                    <i class='bx bx-log-out'></i>
-                </div>
-                </div>
-            </div>
-        </nav>
-        <main class="construction">
-            <h1>En cours !</h1>
-        </main>
+            <!-- Contenu principal du site -->
+            <main class="main_content">
+                <section class="index-page">
+                    <h1>En cours !</h1>
+                </section>
+            </main>
+        </div>
     </body>
 </html>
