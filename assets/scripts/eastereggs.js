@@ -2,6 +2,7 @@
 const image = document.querySelector('.profile');
 const sound1 = new Audio('./assets/Sound/rickroll.mp3');
 const sound2 = new Audio('./assets/Sound/notification.wav');
+const sound3 = new Audio('./Sound/tremblementdeterre.mp3')
 
 let clickCount = 0;
 
@@ -27,7 +28,8 @@ searchInput.addEventListener('keydown', function(event) {
     
     // Vérifiez si le terme de recherche est "earthquake"
     if (searchTerm === 'earthquake') {
-      sound2.play()
+      // sound2.play()
+      sound3.play()
       // Appliquez la classe de secousse à tous les éléments de la page
       const elements = document.getElementsByTagName('*');
       for (let i = 0; i < elements.length; i++) {

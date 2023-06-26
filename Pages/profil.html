@@ -156,47 +156,71 @@
 
             <!-- Contenu principal du site -->
             <main class="main_content">
-                <section class="index-page">
-                    <div class="row">
-                        <div class="col imgprofil">
-                            <img class="photoprofil" src="../Image/photoflo.png">
+                <section class="profil-page">
+                    
+                    <!-- Première card -->
+                    <div class="card card1">
+                        <img class="profile-image" src="../assets/Image/photoflo.png" alt="Ma photo de profil">
+                        <div class="card-content-profile card1-content-profile1">
+                            <h2 class="highlight">A propos de moi</h2>
+                            <ul>
+                                <li><span>Nom:</span> Bernier Florent</li>
+                                <li><span>Né le:</span> 26/09/2002</li>
+                                <li><span>Âge:</span> 20 ans</li>
+                                <li><span>École:</span> IPSSI Paris</li>
+                                <li><span>Formation:</span> BTS SIO (SLAM)</li>
+                                <li><span>Email:</span> florent.bernier1@gmail.com</li>
+                            </ul>
+                            <!-- Autres informations -->
                         </div>
-                        <div class="col col2">
-                            <a href="#presentation">
-                                <div class="card card1">
-                                    <h3>Présentation</h3>
-                                </div>
-                            </a>
-                            <a href="#info-pro">
-                                <div class="card card2">
-                                    <h3>Informations professionels</h3>
-                                </div>
-                            </a>
-                            <a href="#cv">
-                                <div class="card card3">
-                                    <h3>CV</h3>
-                                </div>
-                            </a>
-                            <a href="#ob-projet">
-                                <div class="card card4" id="">
-                                    <h3>Objectif et projet professionels</h3>
-                                </div>
-                            </a>
+                        <span class="border"></span>
+                        <div class="card-content-profile card1-content-profile2">
+                            <ul>
+                                <li class="list-style-none"><a class="glow-on-hover" href="https://www.linkedin.com/in/florent-bernier-876696246/" target="_blank">Linkedin</a></li>
+                                <li class="list-style-none"><a class="glow-on-hover" href="https://github.com/Floshooter" target="_blank">Github</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="cards presentation" id="presentation">
-                        <h1>A propos de moi</h1>
-                        <ul>
-                            <li><span>Nom :</span> Bernier</li>
-                            <li><span>Prénom :</span> Florent</li>
-                            <li><span>Né le :</span> 26-09-2002</li>
-                            <li><span>Âge :</span> 20 ans</li>
-                            <li><span>Etude :</span> BTS SIO - SLAM</li>
-                            <li><span>Email :</span> florent.bernier1@gmail.com</li>
-                            <li><a href="#">Mon Linkedin</a></li>
-                        </ul>
-                        <a href="#top"><button class="top">Revenir en haut de page</button></a>
+
+                    <!-- Deuxième card -->
+                    <div class="card card2">
+                        <div class="card-content-profile">
+                            <h2>Mon parcours scolaire</h2>
+                            <p>
+                                N'ayant pas su quoi faire comme formation, j'ai finalement décider de faire
+                                un bac STI2D avec option SIN (Système de l'information et du numérique). Par la suite, 
+                                je suis rentré dans une classe préparatoire intégrée dans le but d'aller dans le domaine 
+                                de l'informatique. Cependant, après deux ans dans cette école, j'ai finalement trouvé ma voie 
+                                dans un BTS SIO avec option SLAM (Solutions Logicielles et Applications Métiers).
+                            </p>
+                        </div>
                     </div>
+
+                    <!-- Troisième card -->
+                    <div class="card card3">
+                        <div class="card-content-profile">
+                            <h2>Mon CV</h2>
+                            <p>Vous pouvez consulter mon CV en cliquant sur le lien ci-dessous :</p>
+                            <a class="glow-on-hover" href="../assets/Documents/bernier-florent-cv.pdf" target="_blank">Consulter mon CV</a>
+                            <a class="glow-on-hover" href="../assets/Documents/bernier-florent-cv.pdf" download="cv-bernier_florent.pdf">Télécharger mon CV</a>
+                            <!-- Autres informations -->
+                        </div>
+                    </div>
+
+                    <!-- Quatrième card -->
+                    <div class="card card4">
+                        <div class="card-content-profile">
+                            <h2>Objectifs et projets personnels</h2>
+                            <p>
+                                Après mes années de BTS, je souhaiterai continuer avec la licence afin d'obtenir un diplôme 
+                                me permettant de travailler l'année suivante. Si possible, continuer vers un master dans le jeu vidéo, 
+                                un domaine dans lequel j'aimerai y faire carrière.
+                            </p>
+                            <!-- Autres informations -->
+                        </div>
+                    </div>
+                      
+                    <!-- 
                     <div class="cards info-pro" id="info-pro">
                         <h1>Informations de professionnelles</h1>
                         <p>
@@ -221,7 +245,7 @@
                             un domaine dans lequel j'aimerai y faire carrière.
                         </p>
                         <a href="#top"><button class="top">Revenir en haut de page</button></a>
-                    </div>
+                    </div> -->
                 </section>
             </main>
         </div>
