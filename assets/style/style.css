@@ -270,7 +270,9 @@ body.dark {
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  overflow-y: scroll;
 }
+
 /* Contenu index */
 section.index-page {
   flex-basis: 50%;
@@ -310,11 +312,9 @@ section.index-page button {
 section.index-page button:hover {
   animation: pulse-border 1s linear infinite;
 }
-
 section.index-page button:hover {
   cursor: pointer;
 }
-
 .highlight {
   color: var(--highlight);
 }
@@ -371,6 +371,7 @@ span.border{
   color: var(--white-color);
   text-decoration: none;
   border-radius: 4px;
+  margin-top: 10px
 }
 /* Contenu BTS SIO */
 section.btssio-page {
@@ -485,46 +486,66 @@ section.ecole-page {
 section.entreprise-page {
   font-size: 8px;
 }
-.entreprise-page fieldset {
-  padding: 10px;
+/* Styles pour la card d'entreprise */
+section.entreprise-page .entreprise {
+  margin-bottom: 20px;
 }
-.group-entreprise {
+section.entreprise-page ul li {
+  list-style-type: "➜";
+}
+section.entreprise-page .entreprise-titre {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+section.entreprise-page .card-wrapper {
   display: flex;
+  justify-content: center;
+  text-align: justify;
   flex-wrap: wrap;
-  gap: 20px;
 }
-
-section.entreprise-page .card {
+section.entreprise-page .card-wrapper h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+section.entreprise-page .card-entreprise {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  width: 300px;
+  margin-bottom: 10px;
+  padding: 20px;
+  flex-basis: calc(40% - 10px);
+  margin-right: 10px;
 }
-
-section.entreprise-page .card-header {
-  background-color: #6826e3;
-  color: #fff;
-  padding: 10px;
+/* section.entreprise-page .entreprise-informations {
+ 
 }
+section.entreprise-page .entreprise-description {
 
-section.entreprise-page .card-header h2,
-section.entreprise-page .card-header h3 {
-  margin: 0;
 }
-
-section.entreprise-page .card-body {
-  padding: 10px;
+section.entreprise-page .entreprise-projets {
+ 
+} */
+section.entreprise-page .projets-liste {
+  display: flex;
+  flex-direction: column;
 }
-
-section.entreprise-page ul {
-  list-style-type: none;
-  padding: 0;
+section.entreprise-page .entreprise-projets a{
+  display: block;
+  padding: 8px 12px;
+  background: var(--purple-color);
+  color: var(--white-color);
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center;
 }
-
-section.entreprise-page li {
+section.entreprise-page .projet {
   margin-bottom: 5px;
 }
-
+/* .entreprise-competences {
+  
+} */
 
 /* Media & keyframe */
 @media (max-width: 768px) {
@@ -551,29 +572,27 @@ section.entreprise-page li {
     left: -100%;
   }
 }
-@media screen and (max-width: 1080px) {
+
+@media screen and (max-height: 1920px) {
   .sidebar, .bottom_content {
+    font-size: 16px;
     width: var(--sidebar-size);
+    height: auto;
+  }
+  .sidebar {
+    margin-top: 70px;
+  }
+  .bottom_content {
+    margin-top: 30px;
+  }
+  section.index-page,
+  section.profil-page, 
+  section.entreprise-page, 
+  section.ecole-page,
+  section.btssio-page {
+    font-size: 14px;
   }
 }
-
-
-/* Easter eggs */
-/* Définissez l'animation de secousse */
-@keyframes shake {
-  0% { transform: translate(0, 0); }
-  10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 5px); color: brown; }
-  20%, 40%, 60%, 80% { transform: translate(5px, -5px); color: black;}
-  100% { transform: translate(0, 0); }
-}
-
-/* Appliquez l'animation de secousse aux éléments */
-.shake-animation {
-  animation: shake 1s linear;
-}
-
-
-
 /* Button animation */
 .glow-on-hover {
   border: none;
@@ -587,7 +606,6 @@ section.entreprise-page li {
   text-align: center;
   margin-bottom: 5px;
 }
-
 .glow-on-hover:before {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -604,19 +622,15 @@ section.entreprise-page li {
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
 }
-
 .glow-on-hover:active {
   color: #000
 }
-
 .glow-on-hover:active:after {
   background: transparent;
 }
-
 .glow-on-hover:hover:before {
   opacity: 1;
 }
-
 .glow-on-hover:after {
   z-index: -1;
   content: '';
@@ -628,9 +642,59 @@ section.entreprise-page li {
   top: 0;
   border-radius: 10px;
 }
-
 @keyframes glowing {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+/* Easter eggs */
+/* Définissez l'animation de secousse */
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 5px); color: brown; }
+  20%, 40%, 60%, 80% { transform: translate(5px, -5px); color: black;}
+  100% { transform: translate(0, 0); }
+}
+
+/* Appliquez l'animation de secousse aux éléments */
+.shake-animation {
+  animation: shake 1s linear;
+}
+
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#imageSlider {
+  width: 100%;
+  height: 400px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#closePopupButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }

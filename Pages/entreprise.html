@@ -8,7 +8,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <!-- Titre -->
-        <link rel="shortcut icon" href="./assets/Image/briefcase-solid-24.png" />
+        <link rel="shortcut icon" href="../assets/Image/photoflo.png" />
         <title>Portfolio - Florent Bernier</title>    
         <!-- Script & style -->
         <script src="../assets/scripts/eastereggs.js" defer></script>
@@ -157,61 +157,92 @@
             <!-- Contenu principal du site -->
             <main class="main_content">
                 <section class="entreprise-page">
-                    <fieldset>
-                        <legend>Team Vitality</legend>
-                        <div class="group-entreprise"> <!-- Team Vitality-->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>Team Vitality</h2>
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Nom : Team Vitality</li>
-                                        <li>Fondateur : Fabien "Neo" Devide & Nicolas Maurer</li>
-                                        <li>Capital : 36 468€</li>
-                                        <li>Nombre de salariés : +20</li>
-                                        <li>Statut : SAS</li>
-                                    </ul>
+                    <div class="entreprise">
+                        <h2 class="entreprise-titre highlight">Team Vitality</h2>
+                        <div class="card-wrapper">
+                            <div class="card-entreprise entreprise-informations">
+                                <h2 class="highlight">Informations de l'entreprise</h2>
+                                <ul>
+                                    <li>Fondateur : Fabien Devide</li>
+                                    <li>Capital : 36.468 €</li>
+                                    <li>Nombre de salariés : 130+</li>
+                                    <li>Statut : Société par actions simplifiée</li>
+                                    <li>Secteur : international</li>
+                                    <!-- Ajoutez d'autres informations ici -->
+                                </ul>
+                            </div>
+                            <div class="card-entreprise entreprise-description">
+                                <h2 class="highlight">Description de l'entreprise</h2>
+                                <p>
+                                    Team Vitality a été créée en 2013 par Nicolas Maurer 
+                                    et Fabien « Neo » Devide, 2 personnalités se partageant 
+                                    la même passion : les jeux-vidéos. Depuis 10 années, Team Vitality 
+                                    font en sorte d'être au sommet en étant une équipe unique, proche de 
+                                    son public et de faire évoluer ses athlètes. Aujourd'hui, Team Vitality 
+                                    est présente sur plusieurs jeux à l'international grâce à ses locaux : 
+                                    à Paris, au Stade de France, à Berlin ou encore à Mumbai.
+                                </p>
+                                <!-- Ajoutez d'autres informations ici -->
+                            </div>
+                            <div class="card-entreprise entreprise-projets">
+                                <h2 class="highlight">Projets réalisés</h2>
+                                <div class="projets-liste">
+                                    <a href="#" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
+                                    <a href="#" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
+                                    <a href="#" class="projet glow-on-hover">Liens du rapport de stage</a>
+                                    <!-- Ajoutez d'autres boutons de projet ici -->
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>Description de l'entreprise</h2>
-                                </div>
-                                <div class="card-body">
-                                    <p>Team Vitality a été créée en 2013 par Nicolas Maurer et Fabien « Neo » Devide, 
-                                        2 personnalités se partageant la même passion : les jeux-vidéos. Ils travaillent 
-                                        déjà ensemble dans la production télévisée. Fabien a emmené avec lui, Nicolas 
-                                        dans son projet, étant lui déjà dans les compétitions de jeux-vidéos pendant ses 
-                                        temps libres.</p>
+                            <div class="card-entreprise entreprise-competences">
+                                <h2 class="highlight">Compétences acquises</h2>
+                                <ul>
+                                    <li>Développement des connaissances en HTML et CSS.</li>
+                                    <li>Renforcement des connaissances en Javascript et PHP.</li>
+                                    <li>Utilisation de Python, pour l'envoi d'informations sur un Google Sheet.</li>
+                                    <li>Utilisation du "cron job" pour l'exécution automatique d'un code.</li>
+                                    <li>Tester la sécurité auprès des employés.</li>
+                                    <!-- Ajoutez d'autres compétences ici -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="entreprise">
+                        <h2 class="entreprise-titre highlight">?</h2>
+                        <div class="card-wrapper">
+                            <div class="card-entreprise entreprise-informations">
+                                <h2 class="highlight">Informations de l'entreprise</h2>
+                                <ul>
+                                    <li>Fondateur : ?</li>
+                                    <li>Capital : ? €</li>
+                                    <li>Nombre de salariés : ?</li>
+                                    <li>Statut : ?</li>
+                                </ul>
+                            </div>
+                            <div class="card-entreprise entreprise-description">
+                                <h2 class="highlight">Description de l'entreprise</h2>
+                                <p>
+                                    ?
+                                </p>
+                            </div>
+                            <div class="card-entreprise entreprise-projets">
+                                <h2 class="highlight">Projets réalisés</h2>
+                                <div class="projets-liste">
+                                    <a class="projet">?</a>
+                                    <a class="projet">?</a>
+                                    <a class="projet">?</a>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>Projets réalisés</h2>
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Conception d'un email de phishing et d'un site internet</li>
-                                        <li>Conception d'un overlay de stream</li>
-                                    </ul>
-                                </div>
+                            <div class="card-entreprise entreprise-competences">
+                                <h2 class="highlight">Compétences acquises</h2>
+                                <ul>
+                                    <li>?</li>
+                                    <li>?</li>
+                                    <li>?</li>
+                                </ul>
                             </div>
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>Compétences acquises</h2>
-                                </div>
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Utilisation d'une VM pour l'hébergement du site internet</li>
-                                        <li>Utilisation de Python, Javascript et PHP pour l'automatisation d'un formulaire</li>
-                                        <li>Utilisation de l'API Google Sheet</li>
-                                        <li>Utilisation de cron job et d'ajax</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>  
-                    </fieldset>                                          
+                        </div>
+                    </div>                                               -->
                 </section>
             </main>
         </div>

@@ -1,15 +1,29 @@
 // Easter egg #1 : Bottom right profil picture
 const image = document.querySelector('.profile');
-const sound1 = new Audio('./assets/Sound/rickroll.mp3');
-const sound2 = new Audio('./assets/Sound/notification.wav');
-const sound3 = new Audio('./Sound/tremblementdeterre.mp3')
+const ppimg = document.querySelector('.profile-image')
+const sound1 = new Audio('../assets/Sound/rickroll.mp3');
+const sound2 = new Audio('../assets/Sound/notification.wav');
 
 let clickCount = 0;
+
+function replaceImageWithGif() {
+  var originalSrc = ppimg.src;
+  
+  // Remplacer l'image par le GIF animé
+  ppimg.src = '../Image/briefcase-solid-24.png';
+
+  // Rétablir l'image d'origine après 10 secondes
+  setTimeout(function() {
+    ppimg.src = originalSrc;
+  }, 9000);
+}
+
 
 image.addEventListener('click', function() {
     clickCount++;
     if (clickCount === 15) {
-      sound2.play()
+      replaceImageWithGif()
+        sound2.play()
         sound1.currentTime = 0; // Réinitialiser la position de lecture du son
         sound1.play();
 
@@ -28,8 +42,7 @@ searchInput.addEventListener('keydown', function(event) {
     
     // Vérifiez si le terme de recherche est "earthquake"
     if (searchTerm === 'earthquake') {
-      // sound2.play()
-      sound3.play()
+      sound2.play()
       // Appliquez la classe de secousse à tous les éléments de la page
       const elements = document.getElementsByTagName('*');
       for (let i = 0; i < elements.length; i++) {
