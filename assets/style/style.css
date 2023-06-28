@@ -547,6 +547,35 @@ section.entreprise-page .projet {
   
 } */
 
+/* Veilles techno */
+section.veille-page {
+  font-size: 8px;
+}
+section.veille-page .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: grid;
+  justify-content: center;
+}
+section.veille-page .card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section.veille-page .card-preview {
+  display: flex;
+  align-items: center;
+}
+section.veille-page .card-preview img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
 /* Media & keyframe */
 @media (max-width: 768px) {
   /* Pour les écrans plus petits, comme les appareils mobiles */
@@ -589,7 +618,8 @@ section.entreprise-page .projet {
   section.profil-page, 
   section.entreprise-page, 
   section.ecole-page,
-  section.btssio-page {
+  section.btssio-page,
+  section.veille-page  {
     font-size: 14px;
   }
 }
