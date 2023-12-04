@@ -93,8 +93,8 @@
                                 <i class="bx bx-chevron-right arrow-left"></i>
                             </div>
                             <ul class="menu_items submenu">
-                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
-                                <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-desktop'></i>RV & IA</a>
+                                <a href="#" class="nav_link sublink"><i class='bx bx-station' ></i>Flux RSS</a>
                             </ul>
                         </li>
                     </ul>
@@ -162,10 +162,10 @@
                             <ul>
                                 <li><span>Nom:</span> Bernier Florent</li>
                                 <li><span>Né le:</span> 26/09/2002</li>
-                                <li><span>Âge:</span> 20 ans</li>
+                                <li><span>Âge:</span> 21 ans</li>
                                 <li><span>École:</span> IPSSI Paris</li>
                                 <li><span>Formation:</span> BTS SIO (SLAM)</li>
-                                <li><span>Email:</span> florent.bernier1@gmail.com</li>
+                                <li><span></span> florent.bernier1@gmail.com</li>
                             </ul>
                             <!-- Autres informations -->
                         </div>
@@ -183,8 +183,8 @@
                         <div class="card-content-profile">
                             <h2 class="highlight">Mon parcours scolaire</h2>
                             <p>
-                                N'ayant pas su quoi faire comme formation, j'ai finalement décider de faire
-                                un bac STI2D avec option SIN (Système de l'information et du numérique). Par la suite, 
+                                N'ayant pas su quoi faire comme formation, j'ai finalement décidé de faire
+                                un bac STI2D avec option SIN (Système de l'Information et du Numérique). Par la suite, 
                                 je suis rentré dans une classe préparatoire intégrée dans le but d'aller dans le domaine 
                                 de l'informatique. Cependant, après deux ans dans cette école, j'ai finalement trouvé ma voie 
                                 dans un BTS SIO avec option SLAM (Solutions Logicielles et Applications Métiers).
@@ -196,12 +196,11 @@
                     <div class="card card3">
                         <div class="card-content-profile">
                             <h2 class="highlight">Mon CV</h2>
-                            <p>Vous pouvez consulter mon CV en cliquant sur le lien ci-dessous :</p>
-                            <a class="glow-on-hover" href="../assets/Documents/CV/bernier-florent-cv.pdf" target="_blank">Consulter mon CV</a>
-                            <a class="glow-on-hover" href="../assets/Documents/CV/bernier-florent-cv.pdf" download="cv-bernier_florent.pdf">Télécharger mon CV</a>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/CV/bernier-florent-cv.pdf')" target="_blank">Consulter mon CV</a>
                             <!-- Autres informations -->
                         </div>
                     </div>
+                    <embed id="documentEmbed" type="application/pdf" style="display: none; width: 100%; height: 600px;"></embed>
 
                     <!-- Quatrième card -->
                     <div class="card card4">

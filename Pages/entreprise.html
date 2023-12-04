@@ -93,8 +93,8 @@
                                 <i class="bx bx-chevron-right arrow-left"></i>
                             </div>
                             <ul class="menu_items submenu">
-                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
-                                <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-desktop'></i>RV & IA</a>
+                                <a href="#" class="nav_link sublink"><i class='bx bx-station' ></i>Flux RSS</a>
                             </ul>
                         </li>
                     </ul>
@@ -164,7 +164,6 @@
                                     <li>Nombre de salariés : 130+</li>
                                     <li>Forme juridique : Société par actions simplifiée</li>
                                     <li>Secteur : Equipe e-sport international</li>
-                                    <!-- Ajoutez d'autres informations ici -->
                                 </ul>
                             </div>
                             <div class="card-entreprise entreprise-description">
@@ -178,15 +177,13 @@
                                     est présente sur plusieurs jeux à l'international grâce à ses locaux : 
                                     à Paris, au Stade de France, à Berlin ou encore à Mumbai.
                                 </p>
-                                <!-- Ajoutez d'autres informations ici -->
                             </div>
                             <div class="card-entreprise entreprise-projets">
                                 <h2 class="highlight">Projets réalisés</h2>
                                 <div class="projets-liste">
-                                    <a target="_blank" href="../assets/Documents/Stage/Document/Mission1.pdf" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
-                                    <a target="_blank" href="../assets/Documents/Stage/Document/Mission2.pdf" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
-                                    <a target="_blank" href="../assets/Documents/Stage/Document/rapport_de_stage.pdf" class="projet glow-on-hover">Consulter mon rapport de stage</a>
-                                    <!-- Ajoutez d'autres boutons de projet ici -->
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/Mission1.pdf')" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/Mission2.pdf')" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/rapport_de_stage.pdf')" class="projet glow-on-hover">Consulter mon rapport de stage</a>
                                 </div>
                             </div>
                             <div class="card-entreprise entreprise-competences">
@@ -197,9 +194,9 @@
                                     <li>Utilisation de Python, pour l'envoi d'informations sur un Google Sheet.</li>
                                     <li>Utilisation du "cron job" pour l'exécution automatique d'un code.</li>
                                     <li>Tester la sécurité auprès des employés.</li>
-                                    <!-- Ajoutez d'autres compétences ici -->
                                 </ul>
                             </div>
+                            <embed id="documentEmbed" type="application/pdf" style="display: none; width: 80%; height: 600px;"></embed>
                         </div>
                     </div>
 

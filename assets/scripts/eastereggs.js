@@ -21,6 +21,7 @@ function replaceImageWithGif() {
 
 image.addEventListener('click', function() {
     clickCount++;
+    console.log(clickCount)
     if (clickCount === 15) {
       replaceImageWithGif()
         sound2.play()

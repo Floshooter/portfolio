@@ -93,8 +93,8 @@
                                 <i class="bx bx-chevron-right arrow-left"></i>
                             </div>
                             <ul class="menu_items submenu">
-                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 1</a>
-                                <a href="#" class="nav_link sublink"><i class='bx bx-data'></i>Technologique 2</a>
+                                <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-desktop'></i>RV & IA</a>
+                                <a href="#" class="nav_link sublink"><i class='bx bx-station' ></i>Flux RSS</a>
                             </ul>
                         </li>
                     </ul>
@@ -172,14 +172,14 @@
                           <h2 class="highlight">Documentations</h2>
                           <div class="document-list">
                             <!-- Contenu de la boîte "Documentation" -->
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/GLPI/GLPI - Florent Bernier.pdf">GLPI</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/ProjetBiblio/Projet Bibliothèque - Florent Bernier.pdf">Projet Bibliothèque</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/RandomQuote/RandomQuote.pdf">RandomQuote</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/Map intéractive/Map Intéractive.pdf">Map Intéractive</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/API météo/API Météo.pdf">API Météo</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/ShiFuMi/Shifumi.pdf">ShiFuMi</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/Calculatrice/Calculatrice.pdf">Calculatrice</a>
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/TodoJS/TodoJS.pdf">TodoJS</a>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/GLPI/GLPI - Florent Bernier.pdf')">GLPI</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/ProjetBiblio/Projet Bibliothèque - Florent Bernier.pdf')">Projet Bibliothèque</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/RandomQuote/RandomQuote.pdf')">RandomQuote</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Map intéractive/Map Intéractive.pdf')">Map Intéractive</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/API météo/API Météo.pdf')">API Météo</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/ShiFuMi/Shifumi.pdf')">ShiFuMi</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Calculatrice/Calculatrice.pdf')">Calculatrice</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Calculatrice/Calculatrice.pdf')">TodoJS</button>
                             <!-- Ajoutez d'autres liens/document ici -->
                           </div>
                         </div>
@@ -188,17 +188,18 @@
                           <h2 class="highlight">Ateliers professionnels</h2>
                           <div class="workshop-list">
                             <!-- Contenu de la boîte "Ateliers professionnels" -->
-                            <a class="glow-on-hover" target="_blank" href="../assets/Documents/AP1 - Horizon Web/AP1 - Horizon Web.pdf">AP1 - Entreprise fictive</a>
-                            <a class="glow-on-hover" target="_blank" href="#">AP2 - M2L</a>
-                            <a class="glow-on-hover" target="_blank" href="#">AP3 - M2L Solution légère</a>
-                            <a class="glow-on-hover" target="_blank" href="#">AP4 - M2L Solution lourde</a>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/AP1 - Horizon Web/AP1 - Horizon Web.pdf')">AP1 - Entreprise fictive</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/AP2 - M2L/AP2-M2L.pdf')">AP2 - M2L</button>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/AP3-M2L/AP3-CDC.pdf')">AP3 - M2L Solution légère</button>
+                            <button class="glow-on-hover">AP4 - M2L Solution lourde</button>
                             <!-- Ajoutez d'autres liens/ateliers ici -->
                           </div>
                           <h2 class="highlight">Tableau de Synthèse</h2>
                           <div class="workshop-list">
-                            <a target="_blank" href="../assets/Documents/Stage/Tableau Synthèse - Florent Bernier.pdf" class="glow-on-hover">Tableau de synthèse</a>
+                            <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Tableau de synthèse - Florent Bernier.pdf')" class="glow-on-hover">Tableau de synthèse</a>
                           </div>
                         </div>
+                        <embed id="documentEmbed" type="application/pdf" style="display: none; width: 100%; height: 600px;"></embed>
                     </div>
                       
                       
