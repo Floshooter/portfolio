@@ -94,7 +94,7 @@
                             </div>
                             <ul class="menu_items submenu">
                                 <a href="./veilletechno.html" class="nav_link sublink"><i class='bx bx-desktop'></i>RV & IA</a>
-                                <a href="#" class="nav_link sublink"><i class='bx bx-station' ></i>Flux RSS</a>
+                                <a href="./rss.html" class="nav_link sublink"><i class='bx bx-station' ></i>Flux RSS</a>
                             </ul>
                         </li>
                     </ul>
@@ -110,9 +110,9 @@
                                 <i class="bx bx-chevron-right arrow-left"></i>
                             </div>
                             <ul class="menu_items submenu">
-                                <a href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
-                                <a href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
-                                <a href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
+                                <a target="_blank" href="https://twitter.com/Floshooter1" class="nav_link sublink"><i class='bx bxl-twitter'></i>Twitter</a>
+                                <a target="_blank" href="https://www.linkedin.com/in/florent-bernier-876696246/" class="nav_link sublink"><i class='bx bxl-linkedin'></i>LinkedIn</a>
+                                <a target="_blank" href="https://github.com/Floshooter" class="nav_link sublink"><i class='bx bxl-github'></i>GitHub</a>
                             </ul>
                         </li>
                         <li class="item">
@@ -154,12 +154,15 @@
             <main class="main_content">
                 <section class="entreprise-page">
                     <div class="entreprise">
-                        <h2 class="entreprise-titre highlight">Team Vitality</h2>
+                        <div class="entreprise-header">
+                            <h2 class="entreprise-titre highlight">Team Vitality</h2>
+                            <img src="../assets/Image/vitality.png" alt="Logo de l'entreprise" class="entreprise-logo">    
+                        </div>
                         <div class="card-wrapper">
                             <div class="card-entreprise entreprise-informations">
                                 <h2 class="highlight">Informations de l'entreprise</h2>
                                 <ul>
-                                    <li>Fondateur : Fabien Devide</li>
+                                    <li>Fondateur : Fabien Devide & Nicolas Maurer</li>
                                     <li>Capital : 36.468 €</li>
                                     <li>Nombre de salariés : 130+</li>
                                     <li>Forme juridique : Société par actions simplifiée</li>
@@ -184,6 +187,7 @@
                                     <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/Mission1.pdf')" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
                                     <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/Mission2.pdf')" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
                                     <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/rapport_de_stage.pdf')" class="projet glow-on-hover">Consulter mon rapport de stage</a>
+                                    <button class="glow-on-hover" id="closeBtn" style="display: none;" onclick="closeDocument()">Fermer le document</button>
                                 </div>
                             </div>
                             <div class="card-entreprise entreprise-competences">
@@ -198,44 +202,7 @@
                             </div>
                             <embed id="documentEmbed" type="application/pdf" style="display: none; width: 80%; height: 600px;"></embed>
                         </div>
-                    </div>
-
-                    <!-- <div class="entreprise">
-                        <h2 class="entreprise-titre highlight">?</h2>
-                        <div class="card-wrapper">
-                            <div class="card-entreprise entreprise-informations">
-                                <h2 class="highlight">Informations de l'entreprise</h2>
-                                <ul>
-                                    <li>Fondateur : ?</li>
-                                    <li>Capital : ? €</li>
-                                    <li>Nombre de salariés : ?</li>
-                                    <li>Statut : ?</li>
-                                </ul>
-                            </div>
-                            <div class="card-entreprise entreprise-description">
-                                <h2 class="highlight">Description de l'entreprise</h2>
-                                <p>
-                                    ?
-                                </p>
-                            </div>
-                            <div class="card-entreprise entreprise-projets">
-                                <h2 class="highlight">Projets réalisés</h2>
-                                <div class="projets-liste">
-                                    <a class="projet">?</a>
-                                    <a class="projet">?</a>
-                                    <a class="projet">?</a>
-                                </div>
-                            </div>
-                            <div class="card-entreprise entreprise-competences">
-                                <h2 class="highlight">Compétences acquises</h2>
-                                <ul>
-                                    <li>?</li>
-                                    <li>?</li>
-                                    <li>?</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>                                               -->
+                    </div>                                         -->
                 </section>
             </main>
         </div>

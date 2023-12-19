@@ -44,6 +44,7 @@ darkLight.addEventListener("click", () => {
   } else {
     setDarkMode();
   }
+  darkLight.classList.toggle("dark-mode-animation");
 });
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
@@ -62,19 +63,39 @@ let documentActuel = '';
 function toggleDocument(documentURL) {
   const documentEmbed = document.getElementById('documentEmbed');
   
-  if (documentOuvert && documentActuel === documentURL) {
-    documentEmbed.style.display = 'none';
-    documentOuvert = false;
-    documentActuel = '';
-  } else {
-    documentEmbed.setAttribute('src', documentURL);
-    documentEmbed.style.display = 'block';
-    documentOuvert = true;
-    documentActuel = documentURL;
-  }
+  documentEmbed.setAttribute('src', documentURL);
+  documentEmbed.style.display = 'block';
+  closeBtn.style.display = "block";
+  documentOuvert = true;
+  documentActuel = documentURL;
+  
 }
+function closeDocument() {
+  const documentEmbed = document.getElementById('documentEmbed');
+  const closeBtn = document.getElementById('closeBtn');
 
+  documentEmbed.style.display = 'none';
+  closeBtn.style.display = 'none';
+  documentOuvert = false;
+  documentActuel = '';
+}
+// Afficher l'âge
+// const dateOfBirth = new Date('2002-09-26');
+// function calculateAge(dateOfBirth) {
+//   const today = new Date();
+//   const birthDate = new Date(dateOfBirth);
 
+//   let age = today.getFullYear() - birthDate.getFullYear();
+//   const monthDiff = today.getMonth() - birthDate.getMonth();
+
+//   if (monthDiff < 0 || monthDiff === 0 && today.getDate() < birthDate.getDate()) {
+//     age--;
+//   }
+//   return age;
+// }
+// const age = calculateAge(dateOfBirth);
+// const ageDisplay = document.getElementById('ageDisplay');
+// ageDisplay.innerHTML = `<span>Âge:</span> ${age} ans`;
 // Autre
 submenuItems.forEach((item, index) => {
   item.addEventListener("click", () => {

@@ -14,7 +14,7 @@
   --highlight: rgba(104, 38, 227, 0.8);
 
   --sidebar-size: 15%;
-  --sidebar-size2: 20%
+  --sidebar-size2: 15%
 }
 body {
   background-color: #D0E8F6;
@@ -29,6 +29,13 @@ body.dark {
   --grey-color: #f2f2f2;
   --black-color-light: #aaa;
   --highlight: rgba(208, 232, 246, 0.8);
+}
+#darkLight {
+  transition: transform 0.5s ease-in-out;
+}
+
+.dark #darkLight {
+  transform: rotate(180deg);
 }
 
 .container {
@@ -101,8 +108,8 @@ body.dark {
   width: var(--sidebar-size2);
   top: 0;
   left: 0;
-  height: 100%;
-  padding: 80px 20px;
+  height: auto;
+  padding: 100px 10px;
   z-index: 100;
   overflow-y: scroll;
   box-shadow: 0 0 1px var(--black-color-light);
@@ -131,16 +138,16 @@ body.dark {
   white-space: nowrap;
 }
 .menu_dashboard::before {
-  content: "Dashboard";
+  content: "| Dashboard";
 }
 .menu_formation::before {
-  content: "Formation";
+  content: "| Formation";
 }
 .menu_autre::before {
-  content: "Autre";
+  content: "| Autre";
 }
 .menu_setting::before {
-    content: "Settings";
+    content: "| Settings";
 }
 .sidebar.close .menu_title::before {
   content: "";
@@ -322,7 +329,7 @@ section.index-page button:hover {
 
 /* Contenu profil */
 section.profil-page {
-  font-size: 8px;
+  font-size: 12px;
 }
 .card {
   width: 600px;
@@ -366,6 +373,17 @@ span.border{
   margin-bottom: 2px;
   list-style-type: none;
 }
+.card .network-links a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--purple-color);
+  color: var(--white-color);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
 .card button, .card a {
   display: inline-block;
   padding: 8px 12px;
@@ -377,7 +395,7 @@ span.border{
 }
 /* Contenu BTS SIO */
 section.btssio-page {
-  font-size: 8px;
+  font-size: 12px;
   width: 55%;
 }
 .card-bts {
@@ -425,7 +443,7 @@ section.btssio-page {
 
 /* Contenu Ecole */
 section.ecole-page {
-  font-size: 8px;
+  font-size: 12px;
 }
 .content-ecole {
   display: flex;
@@ -476,7 +494,7 @@ section.ecole-page {
   margin-bottom: 5px;
 }
 
-.content-ecole button {
+.content-ecole button, #closeBtn {
   display: block;
   padding: 8px 12px;
   background: var(--purple-color);
@@ -486,13 +504,16 @@ section.ecole-page {
   width: 100%;
   margin-bottom: 8px;
 }
-
+.tbl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Contenu entreprise */
 section.entreprise-page {
-  font-size: 8px;
+  font-size: 12px;
 }
-/* Styles pour la card d'entreprise */
 section.entreprise-page .entreprise {
   margin-bottom: 20px;
 }
@@ -542,9 +563,16 @@ section.entreprise-page .entreprise-projets button{
 section.entreprise-page .projet {
   margin-bottom: 5px;
 }
-/* .entreprise-competences {
-  
-} */
+section.entreprise-page .entreprise-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.entreprise-page .entreprise-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
 
 /* Veilles techno */
 section.veille-page {
@@ -574,54 +602,33 @@ section.veille-page .card-preview img {
   border-radius: 8px;
   margin-right: 10px;
 }
-
-/* Media & keyframe */
-@media (max-width: 768px) {
-  /* Pour les écrans plus petits, comme les appareils mobiles */
-  .card-container {
-    grid-template-columns: 1fr; /* Une seule colonne */
-  }
+/* Flux RSS */
+section.rss-page {
+  font-size: 12px;
 }
-@media screen and (max-width: 768px) {
-  #sidebarOpen {
-    font-size: 25px;
-    display: block;
-    margin-right: 10px;
-    cursor: pointer;
-    color: var(--grey-color);
-  }assets/style/style.css
-  .sidebar.close {
-    left: -100%;
-  }
-  .search_bar {
-    display: none;
-  }
-  .sidebar.close .bottom_content {
-    left: -100%;
-  }
+section.rss-page .card {
+  display: grid;
+  justify-content: center;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-height: 1920px) {
-  .sidebar, .bottom_content {
-    font-size: 16px;
-    width: var(--sidebar-size);
-    height: auto;
-  }
-  .sidebar {
-    margin-top: 70px;
-  }
-  .bottom_content {
-    margin-top: 30px;
-  }
-  section.index-page,
-  section.profil-page, 
-  section.entreprise-page, 
-  section.ecole-page,
-  section.btssio-page,
-  section.veille-page  {
-    font-size: 14px;
-  }
+section.rss-page .card-content {
+  padding: 20px;
 }
+
+section.rss-page .card-content h2 {
+  margin-top: 0;
+}
+
+section.rss-page .card-content p {
+  margin-bottom: 0;
+  color: var(--grey-color)
+}
+
 /* Button animation */
 .glow-on-hover {
   border: none;
@@ -678,20 +685,15 @@ section.veille-page .card-preview img {
 }
 
 /* Easter eggs */
-/* Définissez l'animation de secousse */
 @keyframes shake {
   0% { transform: translate(0, 0); }
   10%, 30%, 50%, 70%, 90% { transform: translate(-5px, 5px); color: brown; }
   20%, 40%, 60%, 80% { transform: translate(5px, -5px); color: black;}
   100% { transform: translate(0, 0); }
 }
-
-/* Appliquez l'animation de secousse aux éléments */
 .shake-animation {
   animation: shake 1s linear;
 }
-
-
 .popup-container {
   position: fixed;
   top: 0;
@@ -726,4 +728,80 @@ section.veille-page .card-preview img {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    height: 10%;
+    padding: 10px;
+  }
+
+  .search_bar {
+    max-width: 300px;
+  }
+}
+
+/* Pour les écrans de 768px à 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    height: 8%;
+    padding: 15px;
+  }
+
+  .search_bar {
+    max-width: 350px;
+  }
+}
+
+/* Pour les écrans de 1025px à 1440px */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .navbar {
+    height: 6%;
+    padding: 20px;
+  }
+
+  .search_bar {
+    max-width: 400px;
+  }
+}
+
+/* Sidebar */
+/* Pour les écrans jusqu'à 768px */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 40%;
+    padding: 20px;
+  }
+  .menu_items .nav_link,
+  .submenu .sublink {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Pour les écrans de 769px à 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .sidebar {
+    width: 30%;
+    padding: 30px;
+  }
+  .menu_items .nav_link,
+  .submenu .sublink {
+    font-size: 16px;
+    margin-bottom: 8px; 
+  }
+}
+
+/* Pour les écrans de 1025px à 1440px */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .sidebar {
+    width: 30%;
+    padding: 40px;
+  }
+  .menu_items .nav_link,
+  .submenu .sublink {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
