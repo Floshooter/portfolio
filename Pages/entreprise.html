@@ -153,6 +153,8 @@
             <!-- Contenu principal du site -->
             <main class="main_content">
                 <section class="entreprise-page">
+                    <button class="navigation-btn" id="previousBtn" onclick="previousEntreprise()">Entreprise précédente</button>
+                    <button class="navigation-btn" id="nextBtn" onclick="nextEntreprise()">Entreprise suivante</button>
                     <div class="entreprise">
                         <div class="entreprise-header">
                             <h2 class="entreprise-titre highlight">Team Vitality</h2>
@@ -184,10 +186,10 @@
                             <div class="card-entreprise entreprise-projets">
                                 <h2 class="highlight">Projets réalisés</h2>
                                 <div class="projets-liste">
-                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/Mission1.pdf')" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
-                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/Mission2.pdf')" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
-                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Document/rapport_de_stage.pdf')" class="projet glow-on-hover">Consulter mon rapport de stage</a>
-                                    <button class="glow-on-hover" id="closeBtn" style="display: none;" onclick="closeDocument()">Fermer le document</button>
+                                    <button class="glow-on-hover" id="closeBtn1" onclick="closeDocument()">Fermer le document</button>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Stage1/Document/Mission1.pdf')" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Stage1/Document/Mission2.pdf')" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Stage1/Document/rapport_de_stage.pdf')" class="projet glow-on-hover">Consulter mon rapport de stage</a>
                                 </div>
                             </div>
                             <div class="card-entreprise entreprise-competences">
@@ -200,9 +202,54 @@
                                     <li>Tester la sécurité auprès des employés.</li>
                                 </ul>
                             </div>
-                            <embed id="documentEmbed" type="application/pdf" style="display: none; width: 80%; height: 600px;"></embed>
                         </div>
-                    </div>                                         -->
+                    </div>
+                    <div class="entreprise">
+                        <div class="entreprise-header">
+                            <h2 class="entreprise-titre highlight">Pabete</h2>
+                            <img src="../assets/Image/pabete.png" alt="Logo de l'entreprise" class="entreprise-logo">    
+                        </div>
+                        <div class="card-wrapper">
+                            <div class="card-entreprise entreprise-informations">
+                                <h2 class="highlight">Informations de l'entreprise</h2>
+                                <ul>
+                                    <li>Fondateur : Salim Boulaich</li>
+                                    <li>Capital : Pas d'informations</li>
+                                    <li>Nombre de salariés : -10</li>
+                                    <li>Forme juridique : Actions Simplifiées Unipersonnelle</li>
+                                    <li>Secteur : Service de garde d'animaux</li>
+                                </ul>
+                            </div>
+                            <div class="card-entreprise entreprise-description">
+                                <h2 class="highlight">Description de l'entreprise</h2>
+                                <p>
+                                    Situé à Paris et actif depuis quelques année, Pabete 
+                                    est une équipe de 10 personnes qui mettent en place 
+                                    un service de garde entre particuliers et professionnels, permettant 
+                                    à n'importe quel adhérent de proposer ses services de garde ou d'échange
+                                    d'animaux.
+                                </p>
+                            </div>
+                            <div class="card-entreprise entreprise-projets">
+                                <h2 class="highlight">Projets réalisés</h2>
+                                <div class="projets-liste">
+                                    <button class="glow-on-hover" id="closeBtn2"onclick="closeDocument()">Fermer le document</button>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Stage2/Document/Mission1.pdf')" class="projet glow-on-hover">Mission 1  : Sensibiliser les employés au phishing</a>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Stage2/Document/Mission2.pdf')" class="projet glow-on-hover">Mission 2 : Préparation d'un overlay pour la Ligue Corpo 2023.</a>
+                                    <button class="glow-on-hover" onclick="toggleDocument('../assets/Documents/Stage/Stage2/Document/rapport_de_stage.pdf')" class="projet glow-on-hover">Consulter mon rapport de stage</a>
+                                </div>
+                            </div>
+                            <div class="card-entreprise entreprise-competences">
+                                <h2 class="highlight">Compétences acquises</h2>
+                                <ul>
+                                    <li>Développement des connaissances en HTML et CSS.</li>
+                                    <li>Renforcement des connaissances en Javascript et PHP.</li>
+                                    <li>Mise en place d'un cahier des charges proposant des solutions d'amélioration de la base de donnée</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <embed id="documentEmbed" type="application/pdf" style="display: none; width: 100%; height: 600px;"></embed> 
                 </section>
             </main>
         </div>

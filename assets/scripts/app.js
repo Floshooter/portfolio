@@ -56,16 +56,19 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Afficher/enlever fichier 
+// Afficher/enlever fichier
 let documentOuvert = false;
 let documentActuel = '';
 
 function toggleDocument(documentURL) {
   const documentEmbed = document.getElementById('documentEmbed');
   
+  
   documentEmbed.setAttribute('src', documentURL);
   documentEmbed.style.display = 'block';
   closeBtn.style.display = "block";
+  closeBtn1.style.display = "block";
+  closeBtn2.style.display = "block";
   documentOuvert = true;
   documentActuel = documentURL;
   
@@ -73,12 +76,43 @@ function toggleDocument(documentURL) {
 function closeDocument() {
   const documentEmbed = document.getElementById('documentEmbed');
   const closeBtn = document.getElementById('closeBtn');
+  const closeBtn1 = document.getElementById('closeBtn1'); 
+  const closeBtn2 = document.getElementById('closeBtn2'); 
 
   documentEmbed.style.display = 'none';
   closeBtn.style.display = 'none';
+  closeBtn1.style.display = 'none'; 
+  closeBtn2.style.display = 'none';
   documentOuvert = false;
   documentActuel = '';
 }
+
+// Affichage de l'entreprise
+const entreprises = document.querySelectorAll('.entreprise');
+let currentIndex = 0;
+
+function showEntreprise(index) {
+    entreprises.forEach((entreprise, i) => {
+        if (i === index) {
+            entreprise.style.display = 'block';
+        } else {
+            entreprise.style.display = 'none';
+        }
+    });
+}
+
+function previousEntreprise() {
+    currentIndex = (currentIndex - 1 + entreprises.length) % entreprises.length;
+    showEntreprise(currentIndex);
+}
+
+function nextEntreprise() {
+    currentIndex = (currentIndex + 1) % entreprises.length;
+    showEntreprise(currentIndex);
+}
+
+// Afficher la première entreprise par défaut
+showEntreprise(currentIndex);
 // Afficher l'âge
 // const dateOfBirth = new Date('2002-09-26');
 // function calculateAge(dateOfBirth) {
