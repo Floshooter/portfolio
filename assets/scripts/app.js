@@ -149,3 +149,8 @@ function calculateAge(dateOfBirth) {
 const age = calculateAge(dateOfBirth);
 const ageDisplay = document.getElementById('ageDisplay');
 ageDisplay.innerHTML = `<span>Âge:</span> ${age} ans`;
+
+// Veille technologique
+function showPDF(pdfPath) {
+  document.getElementById('pdfViewer').src = pdfPath;
+}
